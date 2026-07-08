@@ -61,14 +61,17 @@ export default function Home() {
       />
 
       {/* Hero Section */}
-      <section className="relative min-h-[90svh] flex items-center pt-10 pb-20 overflow-hidden bg-brand-warm">
+      <section className="relative min-h-[90svh] flex items-center pt-10 pb-20 overflow-hidden bg-gradient-to-br from-brand-sky/25 via-brand-warm to-brand-sky/15">
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImg} 
             alt="Calm premium clinic interior" 
-            className="w-full h-full object-cover object-center opacity-40 mix-blend-multiply"
+            className="w-full h-full object-cover object-center opacity-70"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-warm via-brand-warm/90 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-warm via-brand-warm/80 to-brand-sky/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-royal/15 via-transparent to-transparent"></div>
+          <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full bg-brand-sky/20 blur-3xl"></div>
+          <div className="absolute -top-24 right-1/4 w-[400px] h-[400px] rounded-full bg-brand-gold/15 blur-3xl"></div>
         </div>
         
         <div className="container relative z-10 px-4 md:px-6">
@@ -96,11 +99,12 @@ export default function Home() {
       </section>
 
       {/* Services Glance */}
-      <section id="services" className="py-24 bg-white relative">
-        <div className="container px-4 md:px-6">
+      <section id="services" className="py-24 bg-brand-sky/10 relative">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-sky/20 via-transparent to-transparent pointer-events-none"></div>
+        <div className="container px-4 md:px-6 relative z-10">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-4xl md:text-5xl font-serif text-brand-royal mb-6">Our Flagship Therapies</h2>
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-700 text-lg font-light">
               We provide the most advanced regenerative technologies available, completely non-invasive and designed to work with your body's natural healing systems.
             </p>
           </div>
@@ -108,17 +112,18 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {SERVICES.map((service, idx) => (
               <Link key={service.id} href={service.link}>
-                <div className="group h-full bg-brand-warm rounded-3xl p-8 border border-border transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer flex flex-col">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-gold font-serif text-xl mb-6 shadow-sm">
+                <div className="group h-full bg-white/60 backdrop-blur-md rounded-3xl p-8 border border-white/40 transition-all duration-500 hover:shadow-2xl hover:shadow-brand-royal/10 hover:-translate-y-2 cursor-pointer flex flex-col relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-brand-gold/10 rounded-bl-full -mr-16 -mt-16 transition-transform duration-500 group-hover:scale-150"></div>
+                  <div className="relative z-10 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center text-brand-gold font-serif text-xl mb-6 shadow-md">
                     {idx + 1}
                   </div>
-                  <h3 className="text-2xl font-serif text-brand-royal mb-4 group-hover:text-brand-dragonfly transition-colors">
+                  <h3 className="relative z-10 text-2xl font-serif text-brand-royal mb-4 group-hover:text-brand-dragonfly transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 mb-8 flex-grow">
+                  <p className="relative z-10 text-gray-700 mb-8 flex-grow">
                     {service.desc}
                   </p>
-                  <div className="flex items-center text-brand-dragonfly font-medium text-sm mt-auto">
+                  <div className="relative z-10 flex items-center text-brand-dragonfly font-medium text-sm mt-auto">
                     Learn more 
                     <svg className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -160,23 +165,6 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Practitioner Placeholder */}
-      <section className="py-24 bg-white border-t border-border">
-        <div className="container px-4 md:px-6">
-          <div className="max-w-4xl mx-auto text-center border border-dashed border-brand-sky/50 rounded-3xl p-12 bg-brand-warm/30">
-            <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm text-brand-sky">
-              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-              </svg>
-            </div>
-            <h3 className="text-2xl font-serif text-brand-royal mb-4">More Practitioners Coming Soon</h3>
-            <p className="text-gray-500 max-w-lg mx-auto">
-              Our clinic is growing to better serve the Calgary community. We will be welcoming new expert practitioners to the Blue Dragonfly team shortly.
-            </p>
           </div>
         </div>
       </section>

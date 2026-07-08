@@ -44,8 +44,9 @@ export default function WolfeNonSurgical() {
       </section>
 
       {/* Content */}
-      <section className="py-20 bg-brand-warm">
-        <div className="container px-4 md:px-6">
+      <section className="py-20 bg-brand-sky/10 relative">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-sky/20 via-transparent to-transparent pointer-events-none"></div>
+        <div className="container px-4 md:px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             
             <div className="lg:col-span-8">
@@ -56,13 +57,13 @@ export default function WolfeNonSurgical() {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
-                  <div className="bg-white p-8 rounded-2xl shadow-sm border border-border">
+                  <div className="bg-white/60 backdrop-blur-md p-8 rounded-3xl shadow-xl shadow-brand-royal/5 border border-white/40">
                     <h3 className="text-xl font-serif text-brand-royal mb-2">Session Length</h3>
                     <p className="text-3xl text-brand-dragonfly font-light">60 - 90 <span className="text-base text-gray-500 font-normal">minutes</span></p>
                   </div>
-                  <div className="bg-white p-8 rounded-2xl shadow-sm border border-border">
+                  <div className="bg-white/60 backdrop-blur-md p-8 rounded-3xl shadow-xl shadow-brand-royal/5 border border-white/40">
                     <h3 className="text-xl font-serif text-brand-royal mb-2">After Session</h3>
-                    <p className="text-lg text-gray-700">Mild soreness, comparable to a deep workout as the body heals.</p>
+                    <p className="text-lg text-gray-700 font-light">Mild soreness, comparable to a deep workout as the body heals.</p>
                   </div>
                 </div>
 

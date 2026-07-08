@@ -83,7 +83,7 @@ export function ContactForm() {
   }
 
   return (
-    <div className="bg-white p-8 rounded-2xl shadow-xl border border-brand-warm max-w-2xl mx-auto w-full">
+    <div className="bg-white/60 backdrop-blur-md p-8 rounded-3xl shadow-2xl shadow-brand-royal/5 border border-white/40 max-w-2xl mx-auto w-full">
       <h3 className="text-2xl font-serif text-brand-royal mb-6">Send us a message</h3>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">

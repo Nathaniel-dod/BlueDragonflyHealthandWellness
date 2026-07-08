@@ -44,21 +44,22 @@ export default function CardioMedBed() {
       </section>
 
       {/* Intro */}
-      <section className="py-20 bg-brand-warm">
-        <div className="container px-4 md:px-6">
+      <section className="py-20 bg-brand-sky/10 relative">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-sky/20 via-transparent to-transparent pointer-events-none"></div>
+        <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-xl text-gray-700 leading-relaxed mb-12">
+            <p className="text-xl text-gray-700 leading-relaxed mb-12 font-light">
               The basic principle of Cardio MedBed EECP (Enhanced External Counterpulsation) treatment is to increase the amount of oxygen-rich blood returning to the heart during the resting interval between beats. By supplying more oxygen to oxygen-starved areas, the heart can function much more efficiently.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-2xl shadow-sm border border-border">
+              <div className="bg-white/60 backdrop-blur-md p-6 rounded-3xl shadow-xl shadow-brand-royal/5 border border-white/40 transition-transform duration-300 hover:-translate-y-1">
                 <h4 className="font-serif text-brand-royal text-xl mb-2">Restored Energy</h4>
               </div>
-              <div className="bg-white p-6 rounded-2xl shadow-sm border border-border">
+              <div className="bg-white/60 backdrop-blur-md p-6 rounded-3xl shadow-xl shadow-brand-royal/5 border border-white/40 transition-transform duration-300 hover:-translate-y-1">
                 <h4 className="font-serif text-brand-royal text-xl mb-2">Reduced Chest Pain</h4>
               </div>
-              <div className="bg-white p-6 rounded-2xl shadow-sm border border-border">
+              <div className="bg-white/60 backdrop-blur-md p-6 rounded-3xl shadow-xl shadow-brand-royal/5 border border-white/40 transition-transform duration-300 hover:-translate-y-1">
                 <h4 className="font-serif text-brand-royal text-xl mb-2">Improved Stamina</h4>
               </div>
             </div>
@@ -67,73 +68,73 @@ export default function CardioMedBed() {
       </section>
 
       {/* How it works */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-6">
+      <section className="py-24 bg-brand-warm relative">
+        <div className="container px-4 md:px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
             <div>
               <h2 className="text-4xl font-serif text-brand-royal mb-10">The 4-Step Sequential Squeeze</h2>
               
               <div className="space-y-8">
-                <div className="flex">
-                  <div className="flex-shrink-0 w-12 h-12 bg-brand-royal text-brand-gold rounded-full flex items-center justify-center font-serif text-xl mr-6">1</div>
+                <div className="flex group">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly text-brand-gold rounded-full flex items-center justify-center font-serif text-xl mr-6 shadow-md transition-transform group-hover:scale-110">1</div>
                   <div>
-                    <h3 className="text-xl font-medium text-gray-900 mb-2">Calf Cuffs Inflate</h3>
-                    <p className="text-gray-600">Calf cuffs inflate first, pushing blood upward toward the heart.</p>
+                    <h3 className="text-xl font-medium text-brand-royal mb-2">Calf Cuffs Inflate</h3>
+                    <p className="text-gray-600 font-light">Calf cuffs inflate first, pushing blood upward toward the heart.</p>
                   </div>
                 </div>
                 
-                <div className="flex">
-                  <div className="flex-shrink-0 w-12 h-12 bg-brand-royal text-brand-gold rounded-full flex items-center justify-center font-serif text-xl mr-6">2</div>
+                <div className="flex group">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly text-brand-gold rounded-full flex items-center justify-center font-serif text-xl mr-6 shadow-md transition-transform group-hover:scale-110">2</div>
                   <div>
-                    <h3 className="text-xl font-medium text-gray-900 mb-2">Lower-Thigh Cuffs</h3>
-                    <p className="text-gray-600">Lower-thigh cuffs add a second wave of pressure, amplifying venous return.</p>
+                    <h3 className="text-xl font-medium text-brand-royal mb-2">Lower-Thigh Cuffs</h3>
+                    <p className="text-gray-600 font-light">Lower-thigh cuffs add a second wave of pressure, amplifying venous return.</p>
                   </div>
                 </div>
 
-                <div className="flex">
-                  <div className="flex-shrink-0 w-12 h-12 bg-brand-royal text-brand-gold rounded-full flex items-center justify-center font-serif text-xl mr-6">3</div>
+                <div className="flex group">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly text-brand-gold rounded-full flex items-center justify-center font-serif text-xl mr-6 shadow-md transition-transform group-hover:scale-110">3</div>
                   <div>
-                    <h3 className="text-xl font-medium text-gray-900 mb-2">Upper-Thigh Cuffs</h3>
-                    <p className="text-gray-600">Upper-thigh cuffs complete the sequential squeeze for maximum diastolic boost.</p>
+                    <h3 className="text-xl font-medium text-brand-royal mb-2">Upper-Thigh Cuffs</h3>
+                    <p className="text-gray-600 font-light">Upper-thigh cuffs complete the sequential squeeze for maximum diastolic boost.</p>
                   </div>
                 </div>
 
-                <div className="flex">
-                  <div className="flex-shrink-0 w-12 h-12 bg-brand-royal text-brand-gold rounded-full flex items-center justify-center font-serif text-xl mr-6">4</div>
+                <div className="flex group">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly text-brand-gold rounded-full flex items-center justify-center font-serif text-xl mr-6 shadow-md transition-transform group-hover:scale-110">4</div>
                   <div>
-                    <h3 className="text-xl font-medium text-gray-900 mb-2">Simultaneous Deflation</h3>
-                    <p className="text-gray-600">All cuffs deflate at once before the next heartbeat, drastically easing the heart's workload.</p>
+                    <h3 className="text-xl font-medium text-brand-royal mb-2">Simultaneous Deflation</h3>
+                    <p className="text-gray-600 font-light">All cuffs deflate at once before the next heartbeat, drastically easing the heart's workload.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-brand-warm p-10 rounded-3xl border border-border">
+            <div className="bg-white/60 backdrop-blur-md p-10 rounded-3xl border border-white/40 shadow-2xl shadow-brand-royal/5">
               <h3 className="text-2xl font-serif text-brand-royal mb-6">Why Our MedBed is Superior</h3>
               
               <ul className="space-y-6">
                 <li>
                   <strong className="block text-brand-dragonfly mb-1">Arm Cuffs For Upper Body Support</strong>
-                  <span className="text-gray-700">Extra upper-body compression increases blood infusion volume for the heart, brain, and kidneys. Maximum vital organ perfusion.</span>
+                  <span className="text-gray-700 font-light">Extra upper-body compression increases blood infusion volume for the heart, brain, and kidneys. Maximum vital organ perfusion.</span>
                 </li>
                 <li>
                   <strong className="block text-brand-dragonfly mb-1">Precision Pressure Control</strong>
-                  <span className="text-gray-700">Digital control system maintains stable working pressure with a precision error of less than 2 kPa.</span>
+                  <span className="text-gray-700 font-light">Digital control system maintains stable working pressure with a precision error of less than 2 kPa.</span>
                 </li>
                 <li>
                   <strong className="block text-brand-dragonfly mb-1">Automated Controls & Safety</strong>
-                  <span className="text-gray-700">Intelligent arrhythmia tracking automatically adjusts timing. Automatic stop and deflation if heart rate falls outside safe ranges.</span>
+                  <span className="text-gray-700 font-light">Intelligent arrhythmia tracking automatically adjusts timing. Automatic stop and deflation if heart rate falls outside safe ranges.</span>
                 </li>
               </ul>
 
-              <div className="mt-10 p-6 bg-white rounded-xl border border-border">
+              <div className="mt-10 p-6 bg-white/80 rounded-2xl border border-white/40 shadow-sm">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="font-semibold text-gray-900">Session Length</span>
+                  <span className="font-semibold text-brand-royal">Session Length</span>
                   <span className="text-brand-dragonfly font-bold">60 minutes</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="font-semibold text-gray-900">After Session</span>
+                  <span className="font-semibold text-brand-royal">After Session</span>
                   <span className="text-brand-dragonfly font-bold">Gradual energy gains</span>
                 </div>
               </div>

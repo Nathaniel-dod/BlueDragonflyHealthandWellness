@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
+
+@utility container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 80rem;
+}
 
 @theme inline {
   --color-background: hsl(var(--background));
@@ -53,8 +60,6 @@
   --color-brand-gold: #D8B55A;
   --color-brand-warm: #FBFAF7;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 
 :root {
   --app-font-sans: 'Outfit', sans-serif;

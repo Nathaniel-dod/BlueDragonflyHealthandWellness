@@ -43,11 +43,12 @@ export default function PerfectDay() {
       </section>
 
       {/* Journey & Benefits */}
-      <section className="py-20 bg-brand-warm">
-        <div className="container px-4 md:px-6">
+      <section className="py-20 bg-brand-sky/10 relative">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-sky/20 via-transparent to-transparent pointer-events-none"></div>
+        <div className="container px-4 md:px-6 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
             
-            <div className="bg-white p-10 rounded-3xl shadow-sm border border-border">
+            <div className="bg-white/60 backdrop-blur-md p-10 rounded-3xl shadow-xl shadow-brand-royal/5 border border-white/40">
               <h2 className="text-3xl font-serif text-brand-royal mb-6">Your Journey</h2>
               <ul className="space-y-4">
                 <li className="flex items-start">
@@ -86,7 +87,7 @@ export default function PerfectDay() {
                   "Weight Balance", "Abundant Energy", "Pain-Free Muscles & Joints",
                   "Healthy Diet & Recipes"
                 ].map(benefit => (
-                  <div key={benefit} className="bg-white px-4 py-3 rounded-xl border border-border text-gray-700 flex items-center shadow-sm">
+                  <div key={benefit} className="bg-white/60 backdrop-blur-md px-4 py-3 rounded-xl border border-white/40 text-gray-700 flex items-center shadow-sm">
                     <div className="w-2 h-2 bg-brand-dragonfly rounded-full mr-3"></div>
                     {benefit}
                   </div>
@@ -99,12 +100,12 @@ export default function PerfectDay() {
       </section>
 
       {/* Form Section */}
-      <section className="py-24 bg-white relative">
-        <div className="absolute top-0 left-0 w-full h-1/2 bg-brand-warm"></div>
+      <section className="py-24 bg-brand-warm relative">
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-brand-sky/10 pointer-events-none"></div>
         <div className="container relative z-10 px-4 md:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-4xl font-serif text-brand-royal mb-4">Start Your Intake</h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 font-light">
               Please complete this guided intake form so we can begin preparing your personalized protocol.
             </p>
           </div>

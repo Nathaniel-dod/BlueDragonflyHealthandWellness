@@ -44,67 +44,68 @@ export default function CellSonic() {
       </section>
 
       {/* How it Works */}
-      <section className="py-20 bg-brand-warm">
-        <div className="container px-4 md:px-6">
+      <section className="py-20 bg-brand-sky/10 relative">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-sky/20 via-transparent to-transparent pointer-events-none"></div>
+        <div className="container px-4 md:px-6 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-serif text-brand-royal mb-6">How CellSonic Works</h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-700 font-light">
               A healthy body generates 0.04 volts per cell — across 50 trillion cells, that's 2 trillion volts of latent healing energy. CellSonic Regeneration taps directly into this natural electrical system rather than overriding it.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-border">
-              <div className="text-brand-gold font-serif text-4xl mb-4">1</div>
+            <div className="bg-white/60 backdrop-blur-md p-8 rounded-3xl shadow-xl shadow-brand-royal/5 border border-white/40 transition-transform duration-300 hover:-translate-y-1">
+              <div className="text-brand-gold font-serif text-4xl mb-4 opacity-50">1</div>
               <h3 className="text-xl font-bold text-brand-royal mb-3">Bioelectric Foundation</h3>
-              <p className="text-gray-600">Your body is a battery. CellSonic taps directly into this natural electrical system to power healing.</p>
+              <p className="text-gray-700 font-light">Your body is a battery. CellSonic taps directly into this natural electrical system to power healing.</p>
             </div>
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-border">
-              <div className="text-brand-gold font-serif text-4xl mb-4">2</div>
+            <div className="bg-white/60 backdrop-blur-md p-8 rounded-3xl shadow-xl shadow-brand-royal/5 border border-white/40 transition-transform duration-300 hover:-translate-y-1">
+              <div className="text-brand-gold font-serif text-4xl mb-4 opacity-50">2</div>
               <h3 className="text-xl font-bold text-brand-royal mb-3">Targeted Acoustic Pulses</h3>
-              <p className="text-gray-600">High-pressure waves surge through damaged tissue, triggering blood flow and activating stem cells.</p>
+              <p className="text-gray-700 font-light">High-pressure waves surge through damaged tissue, triggering blood flow and activating stem cells.</p>
             </div>
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-border">
-              <div className="text-brand-gold font-serif text-4xl mb-4">3</div>
+            <div className="bg-white/60 backdrop-blur-md p-8 rounded-3xl shadow-xl shadow-brand-royal/5 border border-white/40 transition-transform duration-300 hover:-translate-y-1">
+              <div className="text-brand-gold font-serif text-4xl mb-4 opacity-50">3</div>
               <h3 className="text-xl font-bold text-brand-royal mb-3">Cascade of Regeneration</h3>
-              <p className="text-gray-600">Healing mechanisms shift into overdrive. Inflammation drops. Tissue rebuilds. Pain often fades without surgery.</p>
+              <p className="text-gray-700 font-light">Healing mechanisms shift into overdrive. Inflammation drops. Tissue rebuilds. Pain often fades without surgery.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* The Future of ESWT */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-6">
+      <section className="py-24 bg-brand-warm relative">
+        <div className="container px-4 md:px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
             <div className="order-2 lg:order-1">
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-brand-royal text-white p-6 rounded-2xl">
-                  <h4 className="font-bold text-lg mb-2 text-brand-gold">50% Deeper</h4>
-                  <p className="text-sm text-white/80">Penetration than other leading devices on the market.</p>
+                <div className="bg-gradient-to-br from-brand-royal to-brand-dragonfly text-white p-8 rounded-3xl shadow-lg">
+                  <h4 className="font-bold text-xl mb-2 text-brand-gold">50% Deeper</h4>
+                  <p className="text-sm text-white/90 font-light">Penetration than other leading devices on the market.</p>
                 </div>
-                <div className="bg-brand-warm text-brand-royal p-6 rounded-2xl">
-                  <h4 className="font-bold text-lg mb-2 text-brand-dragonfly">No Downtime</h4>
-                  <p className="text-sm text-gray-700">Return to activity immediately following your 30-45 minute session.</p>
+                <div className="bg-white/80 backdrop-blur-md text-brand-royal p-8 rounded-3xl shadow-lg border border-white/40">
+                  <h4 className="font-bold text-xl mb-2 text-brand-dragonfly">No Downtime</h4>
+                  <p className="text-sm text-gray-700 font-light">Return to activity immediately following your 30-45 minute session.</p>
                 </div>
-                <div className="bg-brand-warm text-brand-royal p-6 rounded-2xl">
-                  <h4 className="font-bold text-lg mb-2 text-brand-dragonfly">Precise</h4>
-                  <p className="text-sm text-gray-700">Frequency adjustability to perfectly target trouble areas.</p>
+                <div className="bg-white/80 backdrop-blur-md text-brand-royal p-8 rounded-3xl shadow-lg border border-white/40">
+                  <h4 className="font-bold text-xl mb-2 text-brand-dragonfly">Precise</h4>
+                  <p className="text-sm text-gray-700 font-light">Frequency adjustability to perfectly target trouble areas.</p>
                 </div>
-                <div className="bg-brand-royal text-white p-6 rounded-2xl">
-                  <h4 className="font-bold text-lg mb-2 text-brand-gold">Measurable</h4>
-                  <p className="text-sm text-white/80">Results visible within weeks without pharmaceuticals.</p>
+                <div className="bg-gradient-to-br from-brand-royal to-brand-dragonfly text-white p-8 rounded-3xl shadow-lg">
+                  <h4 className="font-bold text-xl mb-2 text-brand-gold">Measurable</h4>
+                  <p className="text-sm text-white/90 font-light">Results visible within weeks without pharmaceuticals.</p>
                 </div>
               </div>
             </div>
 
             <div className="order-1 lg:order-2">
               <h2 className="text-4xl font-serif text-brand-royal mb-6">The Future of ESWT</h2>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-gray-700 mb-6 font-light">
                 CellSonic represents the absolute bleeding edge of regenerative acoustic therapy. Its electromagnetic pulse mechanism delivers documented effects across the entire body:
               </p>
-              <ul className="space-y-4">
+              <ul className="space-y-4 font-light">
                 <li className="flex items-center text-gray-700"><div className="w-2 h-2 bg-brand-gold rounded-full mr-3"></div> Better Blood Flow & More Oxygen</li>
                 <li className="flex items-center text-gray-700"><div className="w-2 h-2 bg-brand-gold rounded-full mr-3"></div> Breaks Down Calcium Deposits</li>
                 <li className="flex items-center text-gray-700"><div className="w-2 h-2 bg-brand-gold rounded-full mr-3"></div> Activates Stem Cell Growth</li>
@@ -124,8 +125,9 @@ export default function CellSonic() {
       </section>
 
       {/* Applications */}
-      <section className="py-20 bg-brand-warm border-t border-border">
-        <div className="container px-4 md:px-6">
+      <section className="py-20 bg-brand-sky/10 relative border-t border-white/40">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-brand-sky/20 via-transparent to-transparent pointer-events-none"></div>
+        <div className="container px-4 md:px-6 relative z-10">
           <h2 className="text-3xl font-serif text-brand-royal text-center mb-16">Eight Areas of Application</h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -139,10 +141,10 @@ export default function CellSonic() {
               { num: "07", title: "Tendons & Ligaments", desc: "Restores fibers, reduces microdamage, and alleviates stiffness." },
               { num: "08", title: "Erectile Dysfunction", desc: "Improves blood flow, restores function, and supports tissue healing." }
             ].map(app => (
-              <div key={app.num} className="bg-white p-6 rounded-2xl border border-border shadow-sm">
+              <div key={app.num} className="bg-white/60 backdrop-blur-md p-6 rounded-3xl border border-white/40 shadow-xl shadow-brand-royal/5 transition-all duration-300 hover:-translate-y-1">
                 <div className="text-brand-sky font-medium text-sm mb-2">{app.num} / 08</div>
                 <h4 className="font-bold text-brand-royal mb-2">{app.title}</h4>
-                <p className="text-sm text-gray-600">{app.desc}</p>
+                <p className="text-sm text-gray-700 font-light">{app.desc}</p>
               </div>
             ))}
           </div>

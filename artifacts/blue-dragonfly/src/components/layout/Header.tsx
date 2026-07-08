@@ -108,8 +108,9 @@ export function Header() {
 
       {/* Mobile Nav */}
       <div 
-        className={`lg:hidden fixed inset-x-0 top-[100%] bg-white border-t border-border shadow-xl transition-all duration-300 overflow-hidden ${
-          isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        inert={!isOpen}
+        className={`lg:hidden fixed inset-x-0 top-full bg-white border-t border-border shadow-xl transition-[opacity,transform] duration-150 origin-top ${
+          isOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"
         }`}
       >
         <div className="p-4 flex flex-col gap-2 h-[calc(100dvh-70px)] overflow-y-auto pb-24">

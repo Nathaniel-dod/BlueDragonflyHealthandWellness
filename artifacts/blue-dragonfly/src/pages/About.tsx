@@ -12,20 +12,21 @@ export default function About() {
         description="Meet Cheryl Hathaway, New World Practitioner at Blue Dragonfly Health & Wellness in Calgary. Discover her approach to regenerative wellness."
       />
 
-      <div className="bg-brand-warm py-16 md:py-24">
-        <div className="container px-4 md:px-6">
+      <div className="bg-brand-sky/10 relative py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-sky/20 via-transparent to-transparent pointer-events-none"></div>
+        <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-6xl mx-auto">
             
             {/* Header */}
-            <div className="text-center mb-16">
+            <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-8 duration-1000">
               <h1 className="text-5xl md:text-6xl font-serif text-brand-royal mb-6">About Us</h1>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-700 max-w-2xl mx-auto font-light">
                 Dedicated to helping you reverse the signs of aging and eliminate pain through advanced, non-surgical regeneration.
               </p>
             </div>
 
             {/* Cheryl Bio */}
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-border">
+            <div className="bg-white/60 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl shadow-brand-royal/5 border border-white/40 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-150">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                 
                 <div className="lg:col-span-5">
@@ -74,19 +75,6 @@ export default function About() {
                 </div>
 
               </div>
-            </div>
-
-            {/* Practitioner Placeholder (Reused from Home) */}
-            <div className="mt-24 max-w-4xl mx-auto text-center border border-dashed border-brand-sky/50 rounded-3xl p-12 bg-white">
-              <div className="w-20 h-20 bg-brand-warm rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm text-brand-sky">
-                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-serif text-brand-royal mb-4">More Practitioners Coming Soon</h3>
-              <p className="text-gray-500 max-w-lg mx-auto">
-                Our clinic is growing to better serve the Calgary community. We will be welcoming new expert practitioners to the Blue Dragonfly team shortly. Check back soon!
-              </p>
             </div>
 
           </div>

@@ -11,16 +11,17 @@ export default function Blog() {
         description="Read the latest insights on regenerative health, non-surgical therapies, and longevity from Blue Dragonfly Health & Wellness in Calgary."
       />
 
-      <div className="bg-brand-warm min-h-[70vh] py-16 md:py-24">
-        <div className="container px-4 md:px-6">
+      <div className="bg-brand-sky/10 relative min-h-[70vh] py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-brand-sky/20 via-transparent to-transparent pointer-events-none"></div>
+        <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             
             <h1 className="text-5xl md:text-6xl font-serif text-brand-royal mb-6">Wellness Insights</h1>
-            <p className="text-xl text-gray-600 mb-16">
+            <p className="text-xl text-gray-700 mb-16 font-light">
               Articles, case studies, and insights on regenerative health and feeling your best at any age.
             </p>
 
-            <div className="bg-white rounded-3xl p-12 md:p-20 shadow-sm border border-border">
+            <div className="bg-white/60 backdrop-blur-md rounded-3xl p-12 md:p-20 shadow-2xl shadow-brand-royal/5 border border-white/40">
               <div className="w-24 h-24 bg-brand-sky/10 rounded-full flex items-center justify-center mx-auto mb-8 text-brand-sky">
                 <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H15" />

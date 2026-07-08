@@ -10,21 +10,22 @@ export default function Contact() {
         description="Book a consultation at Blue Dragonfly Health & Wellness in Calgary, Alberta. Get in touch to learn more about our regenerative therapies."
       />
 
-      <div className="bg-brand-warm py-16 md:py-24">
-        <div className="container px-4 md:px-6">
+      <div className="bg-brand-sky/10 relative py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand-sky/20 via-transparent to-transparent pointer-events-none"></div>
+        <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-6xl mx-auto">
             
-            <div className="text-center mb-16">
+            <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-8 duration-1000">
               <h1 className="text-5xl md:text-6xl font-serif text-brand-royal mb-6">Contact Us</h1>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-700 max-w-2xl mx-auto font-light">
                 Ready to take the next step in your health journey? Reach out to schedule a consultation or ask any questions.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-150">
               
               <div className="lg:col-span-5 space-y-8">
-                <div className="bg-white p-8 rounded-2xl shadow-sm border border-border">
+                <div className="bg-white/60 backdrop-blur-md p-8 rounded-3xl shadow-xl shadow-brand-royal/5 border border-white/40">
                   <h3 className="text-2xl font-serif text-brand-royal mb-6">Clinic Information</h3>
                   
                   <div className="space-y-6">

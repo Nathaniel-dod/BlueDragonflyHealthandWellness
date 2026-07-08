@@ -119,15 +119,15 @@ Pain Level: ${data.painLevel}
 
   if (isSuccess) {
     return (
-      <div className="bg-white p-10 rounded-2xl shadow-xl border border-brand-warm text-center max-w-2xl mx-auto">
+      <div className="bg-white/60 backdrop-blur-md p-10 rounded-3xl shadow-2xl shadow-brand-royal/5 border border-white/40 text-center max-w-2xl mx-auto animate-in zoom-in duration-500">
         <div className="w-16 h-16 bg-brand-sky/20 rounded-full flex items-center justify-center mx-auto mb-6 text-brand-dragonfly">
           <CheckCircle2 className="w-8 h-8" />
         </div>
         <h3 className="text-3xl font-serif text-brand-royal mb-4">You're on your way</h3>
-        <p className="text-gray-600 mb-8">
+        <p className="text-gray-700 mb-8 font-light">
           Thank you for sharing your health journey with us. Cheryl will review your intake details, and we'll reach out shortly to schedule your Perfect Day Consultation.
         </p>
-        <Button onClick={() => window.location.href = "/"} className="bg-brand-royal hover:bg-brand-dragonfly text-white rounded-full">
+        <Button onClick={() => window.location.href = "/"} className="bg-brand-royal hover:bg-brand-dragonfly text-white rounded-full h-12 px-8">
           Return to Homepage
         </Button>
       </div>
@@ -135,7 +135,7 @@ Pain Level: ${data.painLevel}
   }
 
   return (
-    <div className="bg-white p-6 md:p-10 rounded-2xl shadow-xl border border-brand-warm max-w-2xl mx-auto">
+    <div className="bg-white/60 backdrop-blur-md p-6 md:p-10 rounded-3xl shadow-2xl shadow-brand-royal/5 border border-white/40 max-w-2xl mx-auto">
       <div className="mb-8">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm font-medium text-brand-dragonfly">Step {step} of 3</span>
