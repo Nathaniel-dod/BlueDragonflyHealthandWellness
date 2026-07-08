@@ -52,15 +52,6 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="bg-brand-royal text-white p-8 rounded-2xl shadow-sm">
-                  <h3 className="text-2xl font-serif text-brand-gold mb-4">Book a Perfect Day</h3>
-                  <p className="text-white/90 mb-6">
-                    Looking for a comprehensive health protocol? Fill out our detailed intake form to get started.
-                  </p>
-                  <a href="/services/perfect-day-consultations" className="inline-block bg-white text-brand-royal hover:bg-brand-warm font-medium px-6 py-3 rounded-full transition-colors w-full text-center">
-                    Start Intake Form
-                  </a>
-                </div>
               </div>
 
               <div className="lg:col-span-7">
