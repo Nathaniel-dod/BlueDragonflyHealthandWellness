@@ -88,7 +88,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button asChild className="bg-brand-royal hover:bg-brand-dragonfly text-white h-14 px-8 rounded-full text-lg shadow-lg hover-elevate">
-                <Link href="/contact">Book a Consultation</Link>
+                <Link href="/contact">Contact Us</Link>
               </Button>
               <Button asChild variant="outline" className="h-14 px-8 rounded-full text-lg border-brand-royal text-brand-royal hover:bg-brand-royal/5">
                 <a href="#services">Explore Services</a>
