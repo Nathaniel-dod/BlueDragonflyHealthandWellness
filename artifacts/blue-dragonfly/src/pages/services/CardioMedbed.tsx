@@ -1,5 +1,6 @@
 import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
+import { ServiceFAQ } from "@/components/ServiceFAQ";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
@@ -147,19 +148,26 @@ export default function CardioMedBed() {
       {/* Validation */}
       <section className="py-20 bg-brand-royal text-white text-center">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-serif text-brand-gold mb-12">Clinically Recognized</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <h2 className="text-3xl font-serif text-brand-gold mb-4">This Is EECP — One of the Most Studied Heart Therapies in the World</h2>
+          <p className="text-white/80 max-w-3xl mx-auto mb-12 text-lg font-light">
+            Cardio MedBed is Enhanced External Counterpulsation (EECP) — a therapy with decades of published research behind it, delivered in a next-generation bed.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div className="p-6">
-              <h4 className="text-xl font-medium mb-3">FDA-Approved (USA)</h4>
-              <p className="text-white/80">Recognized as an effective therapy for angina and heart failure.</p>
+              <h4 className="text-xl font-medium mb-3 text-brand-gold">FDA-Cleared</h4>
+              <p className="text-white/80">EECP is cleared by the U.S. FDA for the treatment of angina (chest pain) and heart failure.</p>
             </div>
             <div className="p-6">
-              <h4 className="text-xl font-medium mb-3">European Society of Cardiology</h4>
-              <p className="text-white/80">Endorsed and recommended for enhancing blood circulation and heart function.</p>
+              <h4 className="text-xl font-medium mb-3 text-brand-gold">Landmark Clinical Trial</h4>
+              <p className="text-white/80">The MUST-EECP randomized controlled trial, conducted at 7 U.S. university hospitals, was published in the Journal of the American College of Cardiology.</p>
             </div>
             <div className="p-6">
-              <h4 className="text-xl font-medium mb-3">Clinically Validated</h4>
-              <p className="text-white/80">Studies confirm EECP's effectiveness in patients with coronary artery disease.</p>
+              <h4 className="text-xl font-medium mb-3 text-brand-gold">Offered at Leading Hospitals</h4>
+              <p className="text-white/80">EECP programs run at world-renowned institutions including the Cleveland Clinic and University of Michigan Health.</p>
+            </div>
+            <div className="p-6">
+              <h4 className="text-xl font-medium mb-3 text-brand-gold">Decades of Research</h4>
+              <p className="text-white/80">Peer-reviewed studies report improved exercise tolerance, reduced angina episodes, and better quality of life.</p>
             </div>
           </div>
           
@@ -170,6 +178,32 @@ export default function CardioMedBed() {
           </div>
         </div>
       </section>
+
+      <ServiceFAQ
+        subtitle="Everything you need to know about EECP therapy."
+        items={[
+          {
+            question: "What is EECP therapy?",
+            answer: "EECP stands for Enhanced External Counterpulsation. It's a non-invasive therapy that uses inflatable cuffs on your legs, timed precisely to your heartbeat, to increase the amount of oxygen-rich blood flowing back to your heart between beats. Over a course of sessions, it can encourage the body to open natural bypass pathways around narrowed vessels."
+          },
+          {
+            question: "Is EECP scientifically proven?",
+            answer: "EECP is one of the most studied non-invasive heart therapies available. It is FDA-cleared in the United States for angina and heart failure, and the landmark MUST-EECP randomized controlled trial — conducted across 7 U.S. university hospitals and published in the Journal of the American College of Cardiology — showed significant improvements in exercise tolerance and angina symptoms. It is offered at leading institutions such as the Cleveland Clinic."
+          },
+          {
+            question: "Does EECP hurt?",
+            answer: "No. Most people describe it as a firm, rhythmic squeeze on the legs — like a strong massage synchronized with your heartbeat. You lie comfortably on the bed for the duration of the session, and many clients read or relax during treatment."
+          },
+          {
+            question: "How many sessions will I need?",
+            answer: "A standard EECP course is typically around 35 one-hour sessions, though your plan is personalized to your goals and how your body responds. Many clients begin noticing gradual gains in energy and stamina partway through their course."
+          },
+          {
+            question: "Who is EECP right for?",
+            answer: "EECP is designed for people looking to support heart health and circulation without surgery or medication — including those experiencing chest pain, fatigue, or reduced stamina. During your free chat with Cheryl, she'll review your situation and help you decide if it's a good fit. EECP is complementary and doesn't replace the care of your physician or cardiologist."
+          }
+        ]}
+      />
     </Layout>
   );
 }

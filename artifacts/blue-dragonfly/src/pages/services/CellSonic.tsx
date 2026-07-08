@@ -1,5 +1,6 @@
 import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
+import { ServiceFAQ } from "@/components/ServiceFAQ";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
@@ -150,6 +151,60 @@ export default function CellSonic() {
           </div>
         </div>
       </section>
+
+      {/* ESWT Credentials */}
+      <section className="py-20 bg-brand-royal text-white text-center">
+        <div className="container px-4 md:px-6">
+          <h2 className="text-3xl font-serif text-brand-gold mb-4">Built on 40+ Years of Medical Science</h2>
+          <p className="text-white/80 max-w-3xl mx-auto mb-12 text-lg font-light">
+            CellSonic is the next generation of Extracorporeal Shockwave Therapy (ESWT) — a technology with deep roots in mainstream medicine.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="p-6">
+              <h4 className="text-xl font-medium mb-3 text-brand-gold">Proven Medical Origins</h4>
+              <p className="text-white/80">Shockwave technology was introduced clinically in 1980 in Munich, Germany, and became the gold standard for treating kidney stones without surgery.</p>
+            </div>
+            <div className="p-6">
+              <h4 className="text-xl font-medium mb-3 text-brand-gold">FDA-Cleared Technology</h4>
+              <p className="text-white/80">ESWT devices are FDA-cleared in the United States for conditions such as plantar fasciitis and tennis elbow.</p>
+            </div>
+            <div className="p-6">
+              <h4 className="text-xl font-medium mb-3 text-brand-gold">Extensively Published</h4>
+              <p className="text-white/80">Decades of peer-reviewed research document ESWT's effects on tissue regeneration, blood vessel growth, and pain relief.</p>
+            </div>
+            <div className="p-6">
+              <h4 className="text-xl font-medium mb-3 text-brand-gold">Used Worldwide</h4>
+              <p className="text-white/80">Shockwave therapy is used in orthopedics, sports medicine, and physiotherapy clinics around the globe — including for professional athletes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <ServiceFAQ
+        subtitle="Everything you need to know about CellSonic and shockwave therapy."
+        items={[
+          {
+            question: "What is ESWT, and how does CellSonic relate to it?",
+            answer: "ESWT stands for Extracorporeal Shockwave Therapy — 'extracorporeal' simply means 'outside the body.' It uses focused acoustic pressure pulses to stimulate healing in targeted tissue. The technology has been used in mainstream medicine since 1980, when it revolutionized kidney stone treatment. CellSonic is an advanced evolution of this technology, using very intense pressure pulses designed to reach deeper tissue."
+          },
+          {
+            question: "Is shockwave therapy scientifically supported?",
+            answer: "Yes. ESWT has decades of peer-reviewed research behind it, and devices are FDA-cleared in the U.S. for conditions like plantar fasciitis and tennis elbow. Published studies document effects including new blood vessel growth, up-regulation of growth factors, improved blood supply, and tissue regeneration. It's widely used in orthopedics and sports medicine worldwide."
+          },
+          {
+            question: "Does the treatment hurt?",
+            answer: "Most clients feel a series of rapid pulses against the skin — often described as tolerable tapping. Sensitivity varies by treatment area, and the intensity is fully adjustable to your comfort. There are no needles, no incisions, and no medication involved."
+          },
+          {
+            question: "Is there any downtime?",
+            answer: "No downtime. Sessions run 30–45 minutes and you can return to your normal activities immediately afterward. Some people experience mild redness or tenderness in the treated area, which typically settles quickly as the healing response gets to work."
+          },
+          {
+            question: "How many sessions will I need?",
+            answer: "It depends on the condition and how long you've had it. Some clients notice changes within a few sessions, while chronic conditions may benefit from a longer course. Cheryl will map out a recommended plan for your specific situation during your consultation."
+          }
+        ]}
+      />
     </Layout>
   );
 }

@@ -136,6 +136,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How It Works */}
+      <section className="py-24 bg-brand-warm relative overflow-hidden">
+        <div className="absolute -top-24 -left-24 w-[400px] h-[400px] rounded-full bg-brand-sky/15 blur-3xl pointer-events-none"></div>
+        <div className="absolute -bottom-24 -right-24 w-[400px] h-[400px] rounded-full bg-brand-gold/10 blur-3xl pointer-events-none"></div>
+        <div className="container px-4 md:px-6 relative z-10">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif text-brand-royal mb-6">Your Journey Starts With a Conversation</h2>
+            <p className="text-gray-700 text-lg font-light">
+              No pressure, no obligation — just a real conversation about what your body needs to heal.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="relative bg-white/70 backdrop-blur-md rounded-3xl p-8 border border-white/40 shadow-xl shadow-brand-royal/5 text-center">
+              <div className="w-14 h-14 mx-auto bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center text-brand-gold font-serif text-2xl mb-6 shadow-md">1</div>
+              <h3 className="text-2xl font-serif text-brand-royal mb-4">Reach Out</h3>
+              <p className="text-gray-700 font-light">
+                Send us a message — it takes less than a minute. Tell us what's been holding you back, whether it's pain, fatigue, or simply wanting more out of life.
+              </p>
+            </div>
+            <div className="relative bg-white/70 backdrop-blur-md rounded-3xl p-8 border border-white/40 shadow-xl shadow-brand-royal/5 text-center">
+              <div className="w-14 h-14 mx-auto bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center text-brand-gold font-serif text-2xl mb-6 shadow-md">2</div>
+              <h3 className="text-2xl font-serif text-brand-royal mb-4">Talk With Cheryl — Free</h3>
+              <p className="text-gray-700 font-light">
+                Book a complimentary 15-minute chat with Cheryl herself. She'll listen to your story, answer your questions, and tell you honestly whether she can help.
+              </p>
+            </div>
+            <div className="relative bg-white/70 backdrop-blur-md rounded-3xl p-8 border border-white/40 shadow-xl shadow-brand-royal/5 text-center">
+              <div className="w-14 h-14 mx-auto bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center text-brand-gold font-serif text-2xl mb-6 shadow-md">3</div>
+              <h3 className="text-2xl font-serif text-brand-royal mb-4">Get Your Personalized Plan</h3>
+              <p className="text-gray-700 font-light">
+                Receive a plan built around your body, your history, and your goals — then begin your journey back to a pain-free, vibrant life.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-14">
+            <Button asChild className="bg-brand-royal hover:bg-brand-dragonfly text-white h-14 px-10 rounded-full text-lg shadow-lg">
+              <Link href="/contact">Start With a Free 15-Minute Chat</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Practitioner Intro */}
       <section className="py-24 bg-brand-royal text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('/assets/wellness-bg.jpg')] bg-cover bg-center"></div>

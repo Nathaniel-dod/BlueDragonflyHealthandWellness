@@ -43,6 +43,34 @@ export default function WolfeNonSurgical() {
         </div>
       </section>
 
+      {/* Heritage & Credentials */}
+      <section className="py-20 bg-brand-warm relative overflow-hidden">
+        <div className="absolute -top-24 -right-24 w-[400px] h-[400px] rounded-full bg-brand-gold/10 blur-3xl pointer-events-none"></div>
+        <div className="container px-4 md:px-6 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-white/70 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-xl shadow-brand-royal/5 text-center">
+              <div className="text-5xl font-serif text-brand-gold mb-4">40+</div>
+              <h3 className="text-xl font-serif text-brand-royal mb-3">Years in the Trenches</h3>
+              <p className="text-gray-700 font-light">Developed by Dr. Darrell Wolfe over 40 years of hands-on, in-the-trenches clinical care — refined not in a lab, but on real bodies with real pain.</p>
+            </div>
+            <div className="bg-white/70 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-xl shadow-brand-royal/5 text-center">
+              <div className="text-5xl font-serif text-brand-gold mb-4">3</div>
+              <h3 className="text-xl font-serif text-brand-royal mb-3">Continents of Practice</h3>
+              <p className="text-gray-700 font-light">This deep tissue therapy is known and practiced throughout the Americas, Australia, and Europe — trusted by practitioners from massage therapists to medical doctors.</p>
+            </div>
+            <div className="bg-white/70 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-xl shadow-brand-royal/5 text-center">
+              <div className="w-14 h-14 mx-auto bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center mb-4 shadow-md">
+                <svg className="w-7 h-7 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-serif text-brand-royal mb-3">Certified Practitioner</h3>
+              <p className="text-gray-700 font-light">Cheryl Hathaway, NWP is certified to practice Wolfe Non-Surgical deep tissue therapy — bringing this world-renowned technique to Calgary.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Content */}
       <section className="py-20 bg-brand-sky/10 relative">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-sky/20 via-transparent to-transparent pointer-events-none"></div>

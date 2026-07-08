@@ -1,5 +1,6 @@
 import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
+import { ServiceFAQ } from "@/components/ServiceFAQ";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
@@ -128,6 +129,31 @@ export default function BoneDensity() {
         </div>
       </section>
 
+      <ServiceFAQ
+        subtitle="Everything you need to know about bone density scanning."
+        items={[
+          {
+            question: "How is this different from a hospital DEXA scan?",
+            answer: "A DEXA scan uses low-dose X-rays, requires a referral in most cases, and often involves a waiting list. Our quantitative ultrasound scan is completely radiation-free, requires no referral, and takes just minutes. Because there's no radiation, you can re-scan as often as you like to track your progress over time."
+          },
+          {
+            question: "Is quantitative ultrasound a recognized method?",
+            answer: "Yes. Quantitative ultrasound (QUS) has been studied for decades as a radiation-free way to assess bone quality by measuring how fast sound travels through bone. It's used around the world as a convenient screening and tracking tool. It complements — but doesn't replace — physician-ordered diagnostics like DEXA when those are clinically needed."
+          },
+          {
+            question: "Does the scan hurt or require any preparation?",
+            answer: "Not at all. The scan is completely painless and non-invasive — no needles, no radiation, no contrast dyes. There's no special preparation required, and you'll have your reading within minutes of sitting down."
+          },
+          {
+            question: "Who should get their bone density checked?",
+            answer: "Bone density naturally declines with age, and often silently. Scanning is especially valuable for women after menopause, anyone with a family history of osteoporosis, and anyone on a regenerative wellness protocol who wants to measure their progress objectively rather than guess."
+          },
+          {
+            question: "How often should I re-scan?",
+            answer: "Because the scan is radiation-free, there's no limit. Most clients establish a baseline, then re-scan periodically through their wellness protocol to see measurable change. Cheryl will recommend a tracking schedule that fits your personal plan."
+          }
+        ]}
+      />
     </Layout>
   );
 }
