@@ -11,10 +11,10 @@ const NAV_LINKS = [
     label: "Services", 
     subLinks: [
       { href: "/services/wolfe-non-surgical", label: "Wolfe Non-Surgical" },
-      { href: "/services/perfect-day-consultations", label: "Perfect Day Consultations" },
-      { href: "/services/cardio-medbed-eecp", label: "Cardio MedBed EECP" },
       { href: "/services/cellsonic-regeneration", label: "CellSonic Regeneration" },
+      { href: "/services/cardio-medbed-eecp", label: "Cardio MedBed EECP" },
       { href: "/services/bone-density-scanning", label: "Bone Density Scanning" },
+      { href: "/services/perfect-day-consultations", label: "Perfect Day Consultations" },
     ]
   },
   { href: "/about", label: "About" },

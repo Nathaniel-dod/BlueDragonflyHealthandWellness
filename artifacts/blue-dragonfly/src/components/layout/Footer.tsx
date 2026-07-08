@@ -27,16 +27,16 @@ export function Footer() {
                 <Link href="/services/wolfe-non-surgical" className="hover:text-white transition-colors">Wolfe Non-Surgical</Link>
               </li>
               <li>
-                <Link href="/services/perfect-day-consultations" className="hover:text-white transition-colors">Perfect Day Consultations</Link>
+                <Link href="/services/cellsonic-regeneration" className="hover:text-white transition-colors">CellSonic Regeneration</Link>
               </li>
               <li>
                 <Link href="/services/cardio-medbed-eecp" className="hover:text-white transition-colors">Cardio MedBed EECP</Link>
               </li>
               <li>
-                <Link href="/services/cellsonic-regeneration" className="hover:text-white transition-colors">CellSonic Regeneration</Link>
+                <Link href="/services/bone-density-scanning" className="hover:text-white transition-colors">Bone Density Scanning</Link>
               </li>
               <li>
-                <Link href="/services/bone-density-scanning" className="hover:text-white transition-colors">Bone Density Scanning</Link>
+                <Link href="/services/perfect-day-consultations" className="hover:text-white transition-colors">Perfect Day Consultations</Link>
               </li>
             </ul>
           </div>

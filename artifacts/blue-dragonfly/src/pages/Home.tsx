@@ -15,10 +15,10 @@ const SERVICES = [
     link: "/services/wolfe-non-surgical"
   },
   {
-    id: "perfect-day",
-    title: "Perfect Day Consultations",
-    desc: "Personalized lifestyle protocols designed to help you self-heal and stay vibrantly healthy.",
-    link: "/services/perfect-day-consultations"
+    id: "cellsonic",
+    title: "CellSonic Regeneration",
+    desc: "Clinically proven shockwave therapy to stimulate deep tissue regeneration and pain relief.",
+    link: "/services/cellsonic-regeneration"
   },
   {
     id: "cardio-medbed",
@@ -27,16 +27,16 @@ const SERVICES = [
     link: "/services/cardio-medbed-eecp"
   },
   {
-    id: "cellsonic",
-    title: "CellSonic Regeneration",
-    desc: "Clinically proven shockwave therapy to stimulate deep tissue regeneration and pain relief.",
-    link: "/services/cellsonic-regeneration"
-  },
-  {
     id: "bone-density",
     title: "Advanced Bone Density Scanning",
     desc: "Clinical-grade, radiation-free ultrasound scanning to track your skeletal health in minutes.",
     link: "/services/bone-density-scanning"
+  },
+  {
+    id: "perfect-day",
+    title: "Perfect Day Consultations",
+    desc: "Personalized lifestyle protocols designed to help you self-heal and stay vibrantly healthy.",
+    link: "/services/perfect-day-consultations"
   }
 ];
 
