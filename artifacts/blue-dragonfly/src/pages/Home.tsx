@@ -136,6 +136,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Practitioner Intro */}
+      <section className="py-24 bg-brand-royal text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-[url('/assets/wellness-bg.jpg')] bg-cover bg-center"></div>
+        <div className="container px-4 md:px-6 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1 space-y-6">
+              <h2 className="text-4xl md:text-5xl font-serif text-brand-gold mb-6">Meet Cheryl Hathaway, NWP</h2>
+              <p className="text-lg text-white/90 leading-relaxed">
+                As a New World Practitioner, Cheryl believes that the body holds immense potential to heal itself when given the right support. She brings decades of understanding to the practice of non-surgical restoration.
+              </p>
+              <p className="text-lg text-white/90 leading-relaxed">
+                Whether you're looking to eliminate pain, improve heart health, or simply craft the perfect daily routine for longevity, Cheryl provides the personalized, lifetime support necessary to achieve extraordinary results.
+              </p>
+              <div className="pt-8">
+                <Button asChild className="bg-brand-gold hover:bg-brand-gold/90 text-brand-royal h-14 px-8 rounded-full text-lg font-medium">
+                  <Link href="/about">Read Full Bio</Link>
+                </Button>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="relative">
+                <div className="absolute -inset-4 border-2 border-brand-gold/30 rounded-2xl rounded-tr-[100px] rounded-bl-[100px] transform rotate-3"></div>
+                <img 
+                  src={cherylImg} 
+                  alt="Cheryl Hathaway, NWP" 
+                  className="w-full h-auto rounded-2xl rounded-tr-[100px] rounded-bl-[100px] shadow-2xl relative z-10 object-cover aspect-[4/5]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How It Works */}
       <section className="py-24 bg-brand-warm relative overflow-hidden">
         <div className="absolute -top-24 -left-24 w-[400px] h-[400px] rounded-full bg-brand-sky/15 blur-3xl pointer-events-none"></div>
@@ -176,39 +209,6 @@ export default function Home() {
             <Button asChild className="bg-brand-royal hover:bg-brand-dragonfly text-white h-14 px-10 rounded-full text-lg shadow-lg">
               <Link href="/contact">Start With a Free 15-Minute Chat</Link>
             </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Practitioner Intro */}
-      <section className="py-24 bg-brand-royal text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('/assets/wellness-bg.jpg')] bg-cover bg-center"></div>
-        <div className="container px-4 md:px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1 space-y-6">
-              <h2 className="text-4xl md:text-5xl font-serif text-brand-gold mb-6">Meet Cheryl Hathaway, NWP</h2>
-              <p className="text-lg text-white/90 leading-relaxed">
-                As a New World Practitioner, Cheryl believes that the body holds immense potential to heal itself when given the right support. She brings decades of understanding to the practice of non-surgical restoration.
-              </p>
-              <p className="text-lg text-white/90 leading-relaxed">
-                Whether you're looking to eliminate pain, improve heart health, or simply craft the perfect daily routine for longevity, Cheryl provides the personalized, lifetime support necessary to achieve extraordinary results.
-              </p>
-              <div className="pt-8">
-                <Button asChild className="bg-brand-gold hover:bg-brand-gold/90 text-brand-royal h-14 px-8 rounded-full text-lg font-medium">
-                  <Link href="/about">Read Full Bio</Link>
-                </Button>
-              </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <div className="relative">
-                <div className="absolute -inset-4 border-2 border-brand-gold/30 rounded-2xl rounded-tr-[100px] rounded-bl-[100px] transform rotate-3"></div>
-                <img 
-                  src={cherylImg} 
-                  alt="Cheryl Hathaway, NWP" 
-                  className="w-full h-auto rounded-2xl rounded-tr-[100px] rounded-bl-[100px] shadow-2xl relative z-10 object-cover aspect-[4/5]"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
