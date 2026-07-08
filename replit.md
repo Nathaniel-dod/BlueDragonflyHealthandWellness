@@ -1,6 +1,6 @@
-# [Project name]
+# Blue Dragonfly Health & Wellness
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Multi-page practitioner website for a Calgary, Alberta health & wellness clinic run by Cheryl Hathaway, NWP — showcasing five regenerative therapy services with consultation intake and contact forms.
 
 ## Run & Operate
 
@@ -22,23 +22,36 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/blue-dragonfly/` — the website (React + Vite, wouter routing, served at `/`)
+- `artifacts/blue-dragonfly/src/pages/` — Home, About, Blog, Contact, 404, and 5 service pages
+- `artifacts/blue-dragonfly/src/components/SEO.tsx` — per-page titles, meta, OG tags, JSON-LD (react-helmet-async)
+- `attached_assets/` — source content brief, both logos, Cheryl's photo (imported via `@assets` alias)
+- `artifacts/blue-dragonfly/src/index.css` — brand theme (blues + gold palette)
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- Frontend-only site: no backend/database. Both forms (contact + Perfect Day intake) POST client-side to Web3Forms using `VITE_WEB3FORMS_ACCESS_KEY`; if the key is unset, forms show a graceful "being set up" message instead of failing.
+- Absolute medical claims from the source copy were softened for Google/YMYL safety; a wellness disclaimer lives in the footer.
+- Bone Density Scanning copy was rewritten patient-facing (source copy was device-sales oriented).
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Home with services-at-a-glance and a reserved "more practitioners coming soon" placeholder (also on About)
+- Service pages: Wolfe Non Surgical, Perfect Day Consultations (multi-step quiz intake form), Cardio MedBed EECP, CellSonic Regeneration ESWT, Advanced Bone Density Scanning
+- About (Cheryl Hathaway, NWP), Blog ("coming soon"), Contact (Web3Forms)
+- SEO/AEO: unique per-page titles/descriptions, Open Graph, JSON-LD LocalBusiness + Service schema, Calgary-focused keywords
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Keep all service and practitioner names complete and exact
+- Keep the powerful sales language, but soften claims that could get penalized by Google
+- Exact brand palette: #173B8F, #2F68C6, #62B6F3, #D8B55A, #FBFAF7
+- More real photos coming later — swap out generated/stock imagery when provided
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- `VITE_WEB3FORMS_ACCESS_KEY` env var is not set yet — user will provide the Web3Forms key later; forms are wired and ready
+- Home page reserves a blank practitioner section (image + bio) for content coming soon
 
 ## Pointers
 

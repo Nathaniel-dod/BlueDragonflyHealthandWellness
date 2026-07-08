@@ -1,0 +1,50 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "ONPndU0Tqc9a1I0M23bhz"
+uri = "file://artifacts/blue-dragonfly/public/assets/hero-clinic.jpg"
+type = "image"
+title = "clean modern health clinic interior waiting room premium calm warm lighting"
+
+[[outputs]]
+id = "IH1JeD1LzaAfOJdVRlBMI"
+uri = "file://artifacts/blue-dragonfly/public/assets/wellness-bg.jpg"
+type = "image"
+title = "calm abstract blue water ripples texture spa wellness"
+
+[[outputs]]
+id = "WxpNBv4I7xQx5rP4FwoYS"
+uri = "file://artifacts/blue-dragonfly/public/assets/consultation.jpg"
+type = "image"
+title = "professional medical consultation room comfortable seating warm lighting"
+
+[[outputs]]
+id = "CywmbuUklkCOMKf0eMCth"
+uri = "file://artifacts/blue-dragonfly/public/assets/wolfe.jpg"
+type = "image"
+title = "professional massage therapy bodywork clean modern clinic warm lighting"
+
+[[outputs]]
+id = "uHra2mWljpywWMDljxpW4"
+uri = "file://artifacts/blue-dragonfly/public/assets/perfect-day.jpg"
+type = "image"
+title = "professional lifestyle consultation wellness planning writing in notebook clean modern office"
+
+[[outputs]]
+id = "cw9769lEhn5waMlWhFnKO"
+uri = "file://artifacts/blue-dragonfly/public/assets/cardio-medbed.jpg"
+type = "image"
+title = "advanced cardiovascular medical therapy calm clinic heart health premium"
+
+[[outputs]]
+id = "SY_AbjQzucUIEtUmGD4DS"
+uri = "file://artifacts/blue-dragonfly/public/assets/cellsonic.jpg"
+type = "image"
+title = "modern regenerative medical technology acoustic wave therapy pain relief clinic"
+
+[[outputs]]
+id = "8FKrFryq5fUjkctESMi4t"
+uri = "file://artifacts/blue-dragonfly/public/assets/bone-density.jpg"
+type = "image"
+title = "clinical bone density ultrasound scanning health measurement professional"
