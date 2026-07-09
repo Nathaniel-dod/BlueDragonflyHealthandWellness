@@ -130,11 +130,11 @@ export default function CardioMedBed() {
               </ul>
 
               <div className="mt-10 p-6 bg-white/80 rounded-2xl border border-white/40 shadow-sm">
-                <div className="flex items-center justify-between mb-2">
+                <div className="flex flex-col gap-0.5 sm:flex-row sm:items-center sm:justify-between sm:gap-4 mb-4 sm:mb-2">
                   <span className="font-semibold text-brand-royal">Session Length</span>
                   <span className="text-brand-dragonfly font-bold">60 minutes</span>
                 </div>
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col gap-0.5 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
                   <span className="font-semibold text-brand-royal">After Session</span>
                   <span className="text-brand-dragonfly font-bold">Gradual energy gains</span>
                 </div>
