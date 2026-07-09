@@ -81,20 +81,20 @@ export default function CellSonic() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
             <div className="order-2 lg:order-1">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gradient-to-br from-brand-royal to-brand-dragonfly text-white p-8 rounded-3xl shadow-lg">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="bg-gradient-to-br from-brand-royal to-brand-dragonfly text-white p-6 sm:p-8 rounded-3xl shadow-lg">
                   <h4 className="font-bold text-xl mb-2 text-brand-gold">50% Deeper</h4>
                   <p className="text-sm text-white/90 font-light">Penetration than other leading devices on the market.</p>
                 </div>
-                <div className="bg-white/80 backdrop-blur-md text-brand-royal p-8 rounded-3xl shadow-lg border border-white/40">
+                <div className="bg-white/80 backdrop-blur-md text-brand-royal p-6 sm:p-8 rounded-3xl shadow-lg border border-white/40">
                   <h4 className="font-bold text-xl mb-2 text-brand-dragonfly">No Downtime</h4>
                   <p className="text-sm text-gray-700 font-light">Return to activity immediately following your 30-45 minute session.</p>
                 </div>
-                <div className="bg-white/80 backdrop-blur-md text-brand-royal p-8 rounded-3xl shadow-lg border border-white/40">
+                <div className="bg-white/80 backdrop-blur-md text-brand-royal p-6 sm:p-8 rounded-3xl shadow-lg border border-white/40">
                   <h4 className="font-bold text-xl mb-2 text-brand-dragonfly">Precise</h4>
                   <p className="text-sm text-gray-700 font-light">Frequency adjustability to perfectly target trouble areas.</p>
                 </div>
-                <div className="bg-gradient-to-br from-brand-royal to-brand-dragonfly text-white p-8 rounded-3xl shadow-lg">
+                <div className="bg-gradient-to-br from-brand-royal to-brand-dragonfly text-white p-6 sm:p-8 rounded-3xl shadow-lg">
                   <h4 className="font-bold text-xl mb-2 text-brand-gold">Measurable</h4>
                   <p className="text-sm text-white/90 font-light">Results visible within weeks without pharmaceuticals.</p>
                 </div>
