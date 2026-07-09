@@ -3,9 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import cherylImg from "@assets/cheryl_with_logo.png";
-
-// We'll use the generated clinic image for the hero
-const heroImg = "/assets/hero-clinic.jpg";
+import heroImg from "@assets/dragonfly_hero.png";
 
 const SERVICES = [
   {
@@ -65,10 +63,10 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImg} 
-            alt="Calm premium clinic interior" 
-            className="w-full h-full object-cover object-center opacity-70"
+            alt="Blue dragonfly resting on a fern in soft morning light" 
+            className="w-full h-full object-cover object-center opacity-90"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-warm via-brand-warm/80 to-brand-sky/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-warm/90 via-brand-warm/40 to-transparent"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-brand-royal/15 via-transparent to-transparent"></div>
           <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full bg-brand-sky/20 blur-3xl"></div>
           <div className="absolute -top-24 right-1/4 w-[400px] h-[400px] rounded-full bg-brand-gold/15 blur-3xl"></div>
