@@ -54,9 +54,9 @@ export default function WolfeNonSurgical() {
               <p className="text-gray-700 font-light">Developed by Dr. Darrell Wolfe over 40 years of hands-on, in-the-trenches clinical care — refined not in a lab, but on real bodies with real pain.</p>
             </div>
             <div className="bg-white/70 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-xl shadow-brand-royal/5 text-center">
-              <div className="text-5xl font-serif text-brand-gold mb-4">3</div>
+              <div className="text-5xl font-serif text-brand-gold mb-4">4</div>
               <h3 className="text-xl font-serif text-brand-royal mb-3">Continents of Practice</h3>
-              <p className="text-gray-700 font-light">This deep tissue therapy is known and practiced throughout the Americas, Australia, and Europe — trusted by practitioners from massage therapists to medical doctors.</p>
+              <p className="text-gray-700 font-light">This deep tissue therapy is known and practiced throughout North America, South America, Australia, and Europe — trusted by practitioners from massage therapists to medical doctors.</p>
             </div>
             <div className="bg-white/70 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-xl shadow-brand-royal/5 text-center">
               <div className="w-14 h-14 mx-auto bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center mb-4 shadow-md">
