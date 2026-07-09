@@ -205,7 +205,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-14">
-            <Button asChild className="bg-brand-royal hover:bg-brand-dragonfly text-white h-14 px-10 rounded-full text-lg shadow-lg">
+            <Button asChild className="bg-brand-royal hover:bg-brand-dragonfly text-white h-auto min-h-14 px-6 md:px-10 py-3 rounded-full text-base md:text-lg shadow-lg whitespace-normal text-center max-w-full">
               <Link href="/contact">Start With a Free 15-Minute Chat</Link>
             </Button>
           </div>
