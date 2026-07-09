@@ -64,9 +64,10 @@ export default function Home() {
           <img 
             src={heroImg} 
             alt="Blue dragonfly resting on a fern in soft morning light" 
-            className="w-full h-full object-cover object-center opacity-90"
+            className="w-full h-full object-cover object-[80%_center] md:object-center opacity-90"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-warm/90 via-brand-warm/40 to-transparent"></div>
+          <div className="absolute inset-0 md:hidden bg-gradient-to-b from-brand-warm/80 via-brand-warm/55 to-brand-warm/10"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-brand-royal/15 via-transparent to-transparent"></div>
           <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full bg-brand-sky/20 blur-3xl"></div>
           <div className="absolute -top-24 right-1/4 w-[400px] h-[400px] rounded-full bg-brand-gold/15 blur-3xl"></div>
