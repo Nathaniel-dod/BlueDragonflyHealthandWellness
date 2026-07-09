@@ -78,7 +78,7 @@ export default function CardioMedBed() {
               
               <div className="space-y-8">
                 <div className="flex group">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly text-brand-gold rounded-full flex items-center justify-center font-serif text-xl mr-6 shadow-md transition-transform group-hover:scale-110">1</div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly text-brand-gold rounded-full flex items-center justify-center font-sans font-semibold text-2xl mr-6 shadow-md transition-transform group-hover:scale-110">1</div>
                   <div>
                     <h3 className="text-xl font-medium text-brand-royal mb-2">Calf Cuffs Inflate</h3>
                     <p className="text-gray-600 font-light">Calf cuffs inflate first, pushing blood upward toward the heart.</p>
@@ -86,7 +86,7 @@ export default function CardioMedBed() {
                 </div>
                 
                 <div className="flex group">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly text-brand-gold rounded-full flex items-center justify-center font-serif text-xl mr-6 shadow-md transition-transform group-hover:scale-110">2</div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly text-brand-gold rounded-full flex items-center justify-center font-sans font-semibold text-2xl mr-6 shadow-md transition-transform group-hover:scale-110">2</div>
                   <div>
                     <h3 className="text-xl font-medium text-brand-royal mb-2">Lower-Thigh Cuffs</h3>
                     <p className="text-gray-600 font-light">Lower-thigh cuffs add a second wave of pressure, amplifying venous return.</p>
@@ -94,7 +94,7 @@ export default function CardioMedBed() {
                 </div>
 
                 <div className="flex group">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly text-brand-gold rounded-full flex items-center justify-center font-serif text-xl mr-6 shadow-md transition-transform group-hover:scale-110">3</div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly text-brand-gold rounded-full flex items-center justify-center font-sans font-semibold text-2xl mr-6 shadow-md transition-transform group-hover:scale-110">3</div>
                   <div>
                     <h3 className="text-xl font-medium text-brand-royal mb-2">Upper-Thigh Cuffs</h3>
                     <p className="text-gray-600 font-light">Upper-thigh cuffs complete the sequential squeeze for maximum diastolic boost.</p>
@@ -102,7 +102,7 @@ export default function CardioMedBed() {
                 </div>
 
                 <div className="flex group">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly text-brand-gold rounded-full flex items-center justify-center font-serif text-xl mr-6 shadow-md transition-transform group-hover:scale-110">4</div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly text-brand-gold rounded-full flex items-center justify-center font-sans font-semibold text-2xl mr-6 shadow-md transition-transform group-hover:scale-110">4</div>
                   <div>
                     <h3 className="text-xl font-medium text-brand-royal mb-2">Simultaneous Deflation</h3>
                     <p className="text-gray-600 font-light">All cuffs deflate at once before the next heartbeat, drastically easing the heart's workload.</p>

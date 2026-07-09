@@ -94,19 +94,19 @@ export default function BoneDensity() {
             <div className="hidden md:block absolute top-12 left-[15%] right-[15%] h-0.5 bg-brand-sky/30 z-0"></div>
             
             <div className="relative z-10 text-center group">
-              <div className="w-24 h-24 bg-white/80 backdrop-blur-md border-4 border-brand-sky text-brand-royal rounded-full flex items-center justify-center font-serif text-3xl mx-auto mb-8 shadow-lg transition-transform group-hover:scale-110">1</div>
+              <div className="w-24 h-24 bg-white/80 backdrop-blur-md border-4 border-brand-sky text-brand-royal rounded-full flex items-center justify-center font-sans font-semibold text-4xl mx-auto mb-8 shadow-lg transition-transform group-hover:scale-110">1</div>
               <h4 className="text-xl font-bold text-brand-royal mb-4">Position & Scan</h4>
               <p className="text-gray-700 font-light leading-relaxed">A handheld probe is positioned against the measurement site, fully clothed. A coupling gel ensures clean signal transmission—no needles, no undressing.</p>
             </div>
             
             <div className="relative z-10 text-center group">
-              <div className="w-24 h-24 bg-white/80 backdrop-blur-md border-4 border-brand-sky text-brand-royal rounded-full flex items-center justify-center font-serif text-3xl mx-auto mb-8 shadow-lg transition-transform group-hover:scale-110">2</div>
+              <div className="w-24 h-24 bg-white/80 backdrop-blur-md border-4 border-brand-sky text-brand-royal rounded-full flex items-center justify-center font-sans font-semibold text-4xl mx-auto mb-8 shadow-lg transition-transform group-hover:scale-110">2</div>
               <h4 className="text-xl font-bold text-brand-royal mb-4">Ultrasound Reading</h4>
               <p className="text-gray-700 font-light leading-relaxed">Sound waves pass through the bone and the device measures their speed. That value is used to assess bone density in minutes.</p>
             </div>
             
             <div className="relative z-10 text-center group">
-              <div className="w-24 h-24 bg-gradient-to-br from-brand-royal to-brand-dragonfly border-4 border-brand-gold text-white rounded-full flex items-center justify-center font-serif text-3xl mx-auto mb-8 shadow-lg transition-transform group-hover:scale-110">3</div>
+              <div className="w-24 h-24 bg-gradient-to-br from-brand-royal to-brand-dragonfly border-4 border-brand-gold text-white rounded-full flex items-center justify-center font-sans font-semibold text-4xl mx-auto mb-8 shadow-lg transition-transform group-hover:scale-110">3</div>
               <h4 className="text-xl font-bold text-brand-royal mb-4">Baseline & Track</h4>
               <p className="text-gray-700 font-light leading-relaxed">The reading becomes your baseline. We re-scan over the course of your protocol to quantify change and demonstrate measurable progress.</p>
             </div>

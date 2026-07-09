@@ -114,7 +114,7 @@ export default function Home() {
               <Link key={service.id} href={service.link}>
                 <div className="group h-full bg-white/60 backdrop-blur-md rounded-3xl p-8 border border-white/40 transition-all duration-500 hover:shadow-2xl hover:shadow-brand-royal/10 hover:-translate-y-2 cursor-pointer flex flex-col relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-brand-gold/10 rounded-bl-full -mr-16 -mt-16 transition-transform duration-500 group-hover:scale-150"></div>
-                  <div className="relative z-10 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center text-brand-gold font-serif text-xl mb-6 shadow-md">
+                  <div className="relative z-10 w-12 h-12 bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center text-brand-gold font-sans font-semibold text-2xl mb-6 shadow-md">
                     {idx + 1}
                   </div>
                   <h3 className="relative z-10 text-2xl font-serif text-brand-royal mb-4 group-hover:text-brand-dragonfly transition-colors">
@@ -183,21 +183,21 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="relative bg-white/70 backdrop-blur-md rounded-3xl p-8 border border-white/40 shadow-xl shadow-brand-royal/5 text-center">
-              <div className="w-14 h-14 mx-auto bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center text-brand-gold font-serif text-2xl mb-6 shadow-md">1</div>
+              <div className="w-14 h-14 mx-auto bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center text-brand-gold font-sans font-semibold text-3xl mb-6 shadow-md">1</div>
               <h3 className="text-2xl font-serif text-brand-royal mb-4">Reach Out</h3>
               <p className="text-gray-700 font-light">
                 Send us a message — it takes less than a minute. Tell us what's been holding you back, whether it's pain, fatigue, or simply wanting more out of life.
               </p>
             </div>
             <div className="relative bg-white/70 backdrop-blur-md rounded-3xl p-8 border border-white/40 shadow-xl shadow-brand-royal/5 text-center">
-              <div className="w-14 h-14 mx-auto bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center text-brand-gold font-serif text-2xl mb-6 shadow-md">2</div>
+              <div className="w-14 h-14 mx-auto bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center text-brand-gold font-sans font-semibold text-3xl mb-6 shadow-md">2</div>
               <h3 className="text-2xl font-serif text-brand-royal mb-4">Talk With Cheryl — Free</h3>
               <p className="text-gray-700 font-light">
                 Book a complimentary 15-minute chat with Cheryl herself. She'll listen to your story, answer your questions, and tell you honestly whether she can help.
               </p>
             </div>
             <div className="relative bg-white/70 backdrop-blur-md rounded-3xl p-8 border border-white/40 shadow-xl shadow-brand-royal/5 text-center">
-              <div className="w-14 h-14 mx-auto bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center text-brand-gold font-serif text-2xl mb-6 shadow-md">3</div>
+              <div className="w-14 h-14 mx-auto bg-gradient-to-br from-brand-royal to-brand-dragonfly rounded-full flex items-center justify-center text-brand-gold font-sans font-semibold text-3xl mb-6 shadow-md">3</div>
               <h3 className="text-2xl font-serif text-brand-royal mb-4">Get Your Personalized Plan</h3>
               <p className="text-gray-700 font-light">
                 Receive a plan built around your body, your history, and your goals — then begin your journey back to a pain-free, vibrant life.
