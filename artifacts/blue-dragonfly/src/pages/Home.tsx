@@ -2,7 +2,7 @@ import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import cherylImg from "@assets/cheryl_image_1783523109696.jpeg";
+import cherylImg from "@assets/cheryl_with_logo.png";
 
 // We'll use the generated clinic image for the hero
 const heroImg = "/assets/hero-clinic.jpg";
@@ -157,11 +157,11 @@ export default function Home() {
             </div>
             <div className="order-1 lg:order-2">
               <div className="relative">
-                <div className="absolute -inset-4 border-2 border-brand-gold/30 rounded-2xl rounded-tr-[100px] rounded-bl-[100px] transform rotate-3"></div>
+                <div className="absolute -inset-4 border-2 border-brand-gold/30 rounded-2xl rounded-bl-[100px] transform rotate-3"></div>
                 <img 
                   src={cherylImg} 
                   alt="Cheryl Hathaway, NWP" 
-                  className="w-full h-auto rounded-2xl rounded-tr-[100px] rounded-bl-[100px] shadow-2xl relative z-10 object-cover aspect-[4/5]"
+                  className="w-full h-auto rounded-2xl rounded-bl-[100px] shadow-2xl relative z-10"
                 />
               </div>
             </div>
