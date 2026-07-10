@@ -32,24 +32,14 @@ export default function WolfeNonSurgical() {
           />
         </div>
         <div className="container relative z-10 px-4 md:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="max-w-3xl">
-              <h1 className="text-5xl md:text-6xl font-serif text-brand-gold mb-6">Wolfe Non-Surgical Treatments</h1>
-              <p className="text-xl md:text-2xl text-white/90 font-light mb-8">
-                The Most Powerful Bodywork Ever Developed
-              </p>
-              <p className="text-lg text-white/80 max-w-2xl leading-relaxed">
-                Unlike conventional therapies that only address symptoms, Wolfe Non-Surgical Treatments target the underlying cause of acute and chronic conditions. We target scar tissue, inflammation, calcification, and crystallization: the physical blocks that create aches and pain.
-              </p>
-            </div>
-            <div className="relative max-w-lg w-full mx-auto lg:ml-auto">
-              <div className="absolute -inset-4 border-2 border-brand-gold/30 rounded-2xl rounded-bl-[100px] transform -rotate-3"></div>
-              <img 
-                src={wolfeTreatmentImg} 
-                alt="Wolfe Non-Surgical deep tissue treatment targeting the source of pain" 
-                className="w-full h-auto rounded-2xl rounded-bl-[100px] shadow-2xl relative z-10"
-              />
-            </div>
+          <div className="max-w-3xl">
+            <h1 className="text-5xl md:text-6xl font-serif text-brand-gold mb-6">Wolfe Non-Surgical Treatments</h1>
+            <p className="text-xl md:text-2xl text-white/90 font-light mb-8">
+              The Most Powerful Bodywork Ever Developed
+            </p>
+            <p className="text-lg text-white/80 max-w-2xl leading-relaxed">
+              Unlike conventional therapies that only address symptoms, Wolfe Non-Surgical Treatments target the underlying cause of acute and chronic conditions. We target scar tissue, inflammation, calcification, and crystallization: the physical blocks that create aches and pain.
+            </p>
           </div>
         </div>
       </section>
@@ -94,6 +84,15 @@ export default function WolfeNonSurgical() {
                 <p>
                   Most clients notice better results from their first treatment than anything they've tried before. Many issues resolve in just a few sessions, sometimes only one. Our approach physically removes the restrictions preventing your body from healing itself.
                 </p>
+
+                <div className="relative max-w-xl mx-auto my-12 not-prose">
+                  <div className="absolute -inset-3 border-2 border-brand-gold/30 rounded-2xl rounded-bl-[80px] transform -rotate-2"></div>
+                  <img 
+                    src={wolfeTreatmentImg} 
+                    alt="Wolfe Non-Surgical deep tissue treatment targeting the source of pain" 
+                    className="w-full h-auto rounded-2xl rounded-bl-[80px] shadow-2xl relative z-10"
+                  />
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
                   <div className="bg-white/60 backdrop-blur-md p-8 rounded-3xl shadow-xl shadow-brand-royal/5 border border-white/40">
