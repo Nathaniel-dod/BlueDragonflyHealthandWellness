@@ -157,7 +157,7 @@ export default function WolfeNonSurgical() {
         <div className="container px-4 md:px-6 text-center max-w-4xl mx-auto">
           <h2 className="text-3xl font-serif text-brand-royal mb-6">Specialty Restorations</h2>
           <p className="text-lg text-gray-600 mb-12">
-            In addition to general pain relief, Wolfe Non-Surgical provides profound, targeted restorations including:
+            Wolfe Non-Surgical provides profound, targeted restorations including:
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
