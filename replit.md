@@ -42,6 +42,7 @@ Multi-page practitioner website for a Calgary, Alberta health & wellness clinic 
 - Blog: 10 articles in `src/content/blogPosts.ts` (structured data, claims softened for YMYL); listing at `/blog` with featured hero (Ultimate Regeneration Protocol, tagged all 3 categories) + filter pills (Wolfe / CellSonic / Cardio); posts at `/blog/:slug` with Article JSON-LD, per-post canonical URL, contact CTA + service link, educational disclaimer
 - Unlisted `/consultation-intake` page (not in nav, meta noindex, intentionally NOT in robots.txt to avoid advertising the URL): full 8-step post-booking consultation form mirroring the Consult Form PDF; data-driven config in `src/components/consult/consultConfig.ts`; localStorage draft autosave with option-validated restore; only name/email/phone/purpose required; delivers via Web3Forms. Workflow: client books → Cheryl sends the link → email arrives.
 - SEO/AEO: unique per-page titles/descriptions, Open Graph, JSON-LD LocalBusiness + Service schema, Calgary-focused keywords
+- Legal: `/privacy-policy` and `/terms` (Terms of Use + medical disclaimer, Alberta/PIPA-oriented boilerplate, not lawyer-reviewed); linked in footer "Clinic" column; in sitemap
 
 ## User preferences
 

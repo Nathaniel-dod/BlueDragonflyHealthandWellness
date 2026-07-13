@@ -9,6 +9,8 @@ import About from "@/pages/About";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import Contact from "@/pages/Contact";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import Terms from "@/pages/Terms";
 import ConsultationIntake from "@/pages/ConsultationIntake";
 import NotFound from "@/pages/not-found";
 
@@ -36,6 +38,8 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/contact" component={Contact} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/terms" component={Terms} />
       {/* Unlisted: sent to clients after booking; noindex, not in nav */}
       <Route path="/consultation-intake" component={ConsultationIntake} />
       
