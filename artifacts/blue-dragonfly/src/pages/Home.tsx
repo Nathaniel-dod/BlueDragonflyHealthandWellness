@@ -2,7 +2,7 @@ import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import cherylImg from "@assets/cheryl_with_logo.png";
+import cherylImg from "@assets/cheryl_image-w_logo_1783984989766.png";
 import heroImg from "@assets/dragonfly_hero.png";
 
 const SERVICES = [

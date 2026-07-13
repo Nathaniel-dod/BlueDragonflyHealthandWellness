@@ -2,7 +2,7 @@ import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import cherylImg from "@assets/cheryl_image_1783523109696.jpeg";
+import cherylImg from "@assets/cheryl_image-w_logo_1783984989766.png";
 
 export default function About() {
   return (
@@ -34,7 +34,7 @@ export default function About() {
                     <img 
                       src={cherylImg} 
                       alt="Cheryl Hathaway, NWP" 
-                      className="w-full rounded-2xl shadow-lg object-cover aspect-[4/5]"
+                      className="w-full rounded-2xl shadow-lg"
                     />
                     <div className="mt-8 text-center lg:text-left">
                       <h2 className="text-3xl font-serif text-brand-royal">Cheryl Hathaway</h2>
