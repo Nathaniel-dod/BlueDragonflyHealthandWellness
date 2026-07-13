@@ -49,6 +49,22 @@ export default function Contact() {
                         <p className="text-gray-600 mt-1">Available via Skype, FaceTime, WhatsApp, and Phone for clients anywhere.</p>
                       </div>
                     </div>
+
+                    <div className="flex items-start">
+                      <svg className="w-6 h-6 text-brand-gold mt-1 mr-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                      <div>
+                        <h4 className="font-semibold text-brand-royal text-lg">In-Person Treatments</h4>
+                        <p className="text-gray-600 mt-1 mb-2">Available at our Calgary clinic only:</p>
+                        <ul className="text-gray-600 space-y-1">
+                          <li>Wolfe Non-Surgical Treatments</li>
+                          <li>Cardio MedBed EECP</li>
+                          <li>CellSonic Regeneration ESWT</li>
+                          <li>Advanced Bone Density Scanning</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
