@@ -6,9 +6,11 @@ interface SEOProps {
   canonicalUrl?: string;
   schema?: Record<string, any>;
   ogImage?: string;
+  /** Unlisted pages: tell search engines not to index or follow. */
+  noindex?: boolean;
 }
 
-export function SEO({ title, description, canonicalUrl, schema, ogImage = "/assets/hero-clinic.jpg" }: SEOProps) {
+export function SEO({ title, description, canonicalUrl, schema, ogImage = "/assets/hero-clinic.jpg", noindex = false }: SEOProps) {
   const fullTitle = `${title} | Blue Dragonfly Health & Wellness Calgary`;
   const url = canonicalUrl || "https://bluedragonflywellness.com"; // placeholder domain
 
@@ -16,7 +18,8 @@ export function SEO({ title, description, canonicalUrl, schema, ogImage = "/asse
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={url} />
+      {noindex && <meta name="robots" content="noindex, nofollow" />}
+      {!noindex && <link rel="canonical" href={url} />}
 
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />

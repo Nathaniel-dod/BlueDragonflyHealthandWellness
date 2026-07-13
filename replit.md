@@ -39,6 +39,7 @@ Multi-page practitioner website for a Calgary, Alberta health & wellness clinic 
 - Home with services-at-a-glance and a reserved "more practitioners coming soon" placeholder (also on About)
 - Service pages: Wolfe Non Surgical, Perfect Day Consultations (multi-step quiz intake form), Cardio MedBed EECP, CellSonic Regeneration ESWT, Advanced Bone Density Scanning
 - About (Cheryl Hathaway, NWP), Blog ("coming soon"), Contact (Web3Forms)
+- Unlisted `/consultation-intake` page (not in nav, meta noindex, intentionally NOT in robots.txt to avoid advertising the URL): full 8-step post-booking consultation form mirroring the Consult Form PDF; data-driven config in `src/components/consult/consultConfig.ts`; localStorage draft autosave with option-validated restore; only name/email/phone/purpose required; delivers via Web3Forms. Workflow: client books → Cheryl sends the link → email arrives.
 - SEO/AEO: unique per-page titles/descriptions, Open Graph, JSON-LD LocalBusiness + Service schema, Calgary-focused keywords
 
 ## User preferences

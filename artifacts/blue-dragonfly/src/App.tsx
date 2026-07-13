@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Blog from "@/pages/Blog";
 import Contact from "@/pages/Contact";
+import ConsultationIntake from "@/pages/ConsultationIntake";
 import NotFound from "@/pages/not-found";
 
 import WolfeNonSurgical from "@/pages/services/Wolfe";
@@ -33,6 +34,8 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/blog" component={Blog} />
       <Route path="/contact" component={Contact} />
+      {/* Unlisted: sent to clients after booking; noindex, not in nav */}
+      <Route path="/consultation-intake" component={ConsultationIntake} />
       
       {/* Services */}
       <Route path="/services/wolfe-non-surgical" component={WolfeNonSurgical} />
