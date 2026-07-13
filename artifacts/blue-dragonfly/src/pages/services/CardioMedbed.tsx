@@ -38,7 +38,7 @@ export default function CardioMedBed() {
               Complete Regeneration of Heart & Circulatory System
             </p>
             <blockquote className="border-l-4 border-brand-gold pl-6 py-2 mb-8 text-xl italic text-white/90 font-serif">
-              "After 40 hours on the Cardio MedBed, many patients describe it as a second chance for their heart."
+              "After 35 hours on the Cardio MedBed, many patients describe it as a second chance for their heart."
             </blockquote>
           </div>
         </div>

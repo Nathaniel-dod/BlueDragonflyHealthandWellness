@@ -15,7 +15,7 @@ const SERVICES = [
   {
     id: "cellsonic",
     title: "CellSonic Regeneration",
-    desc: "Clinically proven shockwave therapy to stimulate deep tissue regeneration and pain relief.",
+    desc: "Clinically studied shockwave therapy to stimulate deep tissue regeneration and pain relief.",
     link: "/services/cellsonic-regeneration"
   },
   {

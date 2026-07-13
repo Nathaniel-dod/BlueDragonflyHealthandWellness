@@ -348,7 +348,7 @@ export const BLOG_POSTS: BlogPost[] = [
           },
           {
             title: "Speed",
-            text: "Sessions are incredibly fast, often taking only 10 to 15 minutes per targeted area.",
+            text: "Treatment is incredibly fast — often only 10 to 15 minutes per targeted area, with a full appointment typically running 30 to 45 minutes.",
           },
         ],
       },
@@ -428,7 +428,7 @@ export const BLOG_POSTS: BlogPost[] = [
           },
           {
             title: "Speed & Comfort",
-            text: "The waves tend to have an immediate analgesic (pain-relieving) effect by desensitizing overactive nerve endings. Sessions are incredibly fast, typically lasting only 10 to 15 minutes.",
+            text: "The waves tend to have an immediate analgesic (pain-relieving) effect by desensitizing overactive nerve endings. Treatment is incredibly fast — typically 10 to 15 minutes per targeted area, with a full appointment running 30 to 45 minutes.",
           },
         ],
       },

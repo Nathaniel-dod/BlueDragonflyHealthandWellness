@@ -38,7 +38,7 @@ export default function CellSonic() {
               Innovative Technology for Tissue Regeneration
             </p>
             <p className="text-lg text-white/80 max-w-2xl leading-relaxed">
-              Extracorporeal Shock Wave Therapy (ESWT) is a non-invasive technology for stimulating tissue regeneration. It is clinically proven to be effective for chronic pain, circulatory disorders, and wound healing without medication or downtime.
+              Extracorporeal Shock Wave Therapy (ESWT) is a non-invasive technology for stimulating tissue regeneration. It is backed by decades of clinical research for chronic pain, circulatory support, and wound healing — without medication or downtime.
             </p>
           </div>
         </div>

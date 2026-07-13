@@ -53,7 +53,7 @@ export default function About() {
                   </p>
                   
                   <p>
-                    At Blue Dragonfly Health & Wellness, Cheryl utilizes state-of-the-art technologies and techniques that are clinically proven but operate outside the paradigm of invasive surgery or pharmaceuticals. From unlocking cellular energy with CellSonic Regeneration to completely revitalizing the circulatory system with Cardio MedBed EECP, her approach is comprehensive and data-driven.
+                    At Blue Dragonfly Health & Wellness, Cheryl utilizes state-of-the-art technologies and techniques that are clinically studied but operate outside the paradigm of invasive surgery or pharmaceuticals. From unlocking cellular energy with CellSonic Regeneration to revitalizing the circulatory system with Cardio MedBed EECP, her approach is comprehensive and data-driven.
                   </p>
                   
                   <h3 className="text-2xl font-serif text-brand-royal mt-10 mb-4">A Personalized Approach</h3>

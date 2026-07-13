@@ -70,6 +70,7 @@ export default function BlogPost() {
         title={post.title.split("?")[0] + "?"}
         description={post.excerpt}
         canonicalUrl={`https://bluedragonflywellness.com/blog/${post.slug}`}
+        ogType="article"
         schema={articleSchema}
       />
 
