@@ -1,5 +1,6 @@
 import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/layout/Layout";
+import { ServiceFAQ } from "@/components/ServiceFAQ";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import wolfeTreatmentImg from "@assets/wolfe_treatment.png";
@@ -173,6 +174,37 @@ export default function WolfeNonSurgical() {
           <p className="mt-8 text-gray-500 italic">And more upon request.</p>
         </div>
       </section>
+
+      {/* FAQ */}
+      <ServiceFAQ
+        subtitle="Everything you need to know about Wolfe Non-Surgical therapy."
+        items={[
+          {
+            question: "What is Wolfe Non-Surgical therapy?",
+            answer: "Wolfe Non-Surgical is a highly specialized bodywork and elbow therapy technique refined over 40 years. Instead of just managing your symptoms, this therapy addresses the root causes of acute and chronic pain, muscle restrictions, and internal scar tissue to help restore optimal circulation and vitality to your body."
+          },
+          {
+            question: "How does the treatment actually work?",
+            answer: "The therapy works by safely and effectively pulling muscle fibers apart to break up accumulated scar tissue. This specialized technique is designed to restore the natural flow of blood, lymph fluid, and life force to your tendons, ligaments, muscles, joints, and organs. By creating space within the tissues, it brings life back to the muscle and supports your body's ability to actively restructure and heal."
+          },
+          {
+            question: "Does this therapy physically break up scar tissue?",
+            answer: "Yes. A core focus of the Wolfe Non-Surgical approach is physically breaking up the internal scar tissue, crystallization, and displaced calcium that build up from past surgeries, injuries, or daily lifestyle habits. By breaking down these physical blockages, the goal is to restore life to the muscle tissue so it can return toward its original, healthy, and functional state."
+          },
+          {
+            question: "What conditions can it help with?",
+            answer: "This therapy is designed to support conditions often thought to be stubborn or chronic, including joint and structural issues (arthritis, osteoarthritis, bursitis, joint stiffness, and TMJ disorders), muscle conditions (spasms, cramps, strains, restless leg syndrome, and neck spasms known as torticollis), headaches (migraines, tension, exertion, cervicogenic, and post-traumatic headaches), and abdominal and pelvic concerns (gastritis, gastroenteritis, peptic ulcers, pancreatitis, and inflammatory bowel disease)."
+          },
+          {
+            question: "What kind of results can I expect?",
+            answer: "Many patients report noticeable pain relief alongside increased range of motion, flexibility, and strength. By clearing out the physical blocks that contribute to swelling and inflammation, the therapy aims to trigger a domino effect of deep, lasting healing throughout the body. Individual results vary from person to person."
+          },
+          {
+            question: "How fast will I see a difference?",
+            answer: "Patients often report feeling a remarkable difference in just one session. For example, many clients with arthritic joint pain have reported substantial relief — in some cases a 70–80% reduction — within a single 30-minute treatment. Every body is different, and your practitioner will discuss what to expect for your specific situation."
+          }
+        ]}
+      />
     </Layout>
   );
 }
