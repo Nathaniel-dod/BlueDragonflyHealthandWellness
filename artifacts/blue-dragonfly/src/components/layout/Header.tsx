@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
-import logoHorizontal from "@assets/Blue_Dragon_Fly_Logo_2_1783523102207.png";
+import logoCircle from "@assets/logo_circle.png";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -49,9 +49,9 @@ export function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex-shrink-0">
             <img 
-              src={logoHorizontal} 
+              src={logoCircle} 
               alt="Blue Dragonfly Health & Wellness" 
-              className="h-10 md:h-12 w-auto object-contain"
+              className="h-14 md:h-16 w-auto object-contain"
             />
           </Link>
 

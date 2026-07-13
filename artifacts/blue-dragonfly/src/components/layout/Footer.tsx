@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import logoFull from "@assets/Blue_Dragon_Fly_Logo_1_1783523099761.png";
+import logoFull from "@assets/logo_circle.png";
 
 export function Footer() {
   return (
