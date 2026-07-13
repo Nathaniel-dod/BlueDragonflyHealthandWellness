@@ -19,7 +19,6 @@ const NAV_LINKS = [
   },
   { href: "/about", label: "About" },
   { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -91,7 +90,7 @@ export function Header() {
               </div>
             ))}
             <Button asChild className="bg-brand-royal hover:bg-brand-dragonfly text-white ml-2 rounded-full px-8">
-              <Link href="/contact">Book Consultation</Link>
+              <Link href="/contact">Contact</Link>
             </Button>
           </nav>
 
@@ -149,7 +148,7 @@ export function Header() {
           ))}
           <div className="mt-6 p-4">
             <Button asChild className="w-full bg-brand-royal hover:bg-brand-dragonfly text-white rounded-full h-12 text-lg">
-              <Link href="/contact">Book Consultation</Link>
+              <Link href="/contact">Contact</Link>
             </Button>
           </div>
         </div>
