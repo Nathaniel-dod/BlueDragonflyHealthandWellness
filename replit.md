@@ -50,7 +50,7 @@ Multi-page practitioner website for a Calgary, Alberta health & wellness clinic 
 
 ## Gotchas
 
-- `VITE_WEB3FORMS_ACCESS_KEY` env var is not set yet — user will provide the Web3Forms key later; forms are wired and ready
+- `VITE_WEB3FORMS_ACCESS_KEY` is set (shared env) and confirmed working on the live Cloudflare site. Web3Forms blocks submissions from dev/preview domains (localhost, Replit preview), so forms show "Submission failed" in the workspace preview — this is expected; production and `pages.dev` domains work.
 - Home page reserves a blank practitioner section (image + bio) for content coming soon
 
 ## Pointers
