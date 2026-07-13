@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -9,18 +9,63 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { CheckCircle2, ChevronRight, ArrowLeft } from "lucide-react";
+import {
+  consumeSubmissionSlot,
+  sanitizeLine,
+  sanitizeText,
+} from "@/lib/formSecurity";
 
-const formSchema = z.object({
-  healthGoals: z.string().min(5, "Please share a bit about your health goals"),
-  conditions: z.string().optional(),
-  energyLevel: z.string().min(1, "Please select an energy level"),
-  sleepQuality: z.string().min(1, "Please select a sleep quality level"),
-  painLevel: z.string().min(1, "Please select a pain level"),
-  consultationFormat: z.enum(["in-person", "online"]),
-  name: z.string().min(2, "Name is required"),
-  email: z.string().email("Valid email is required"),
-  phone: z.string().min(10, "Phone number is required for consultations"),
-});
+/**
+ * Schema-based validation (OWASP: strict allow-list validation).
+ * - Radio-button answers are locked to exact enums (reject tampered values).
+ * - Explicit length limits on all free-text fields.
+ * - Phone restricted to a safe character set.
+ * - `.strict()` rejects any unexpected fields.
+ */
+const formSchema = z
+  .object({
+    healthGoals: z
+      .string()
+      .trim()
+      .min(5, "Please share a bit about your health goals")
+      .max(2000, "Please keep this under 2000 characters"),
+    conditions: z
+      .string()
+      .trim()
+      .max(2000, "Please keep this under 2000 characters")
+      .optional()
+      .or(z.literal("")),
+    energyLevel: z.enum(
+      ["Low (exhausted)", "Moderate (gets me by)", "High (vibrant)"],
+      { message: "Please select an energy level" },
+    ),
+    sleepQuality: z.enum(
+      ["Poor (restless)", "Fair (wake up tired)", "Good (restful)"],
+      { message: "Please select a sleep quality level" },
+    ),
+    painLevel: z.enum(
+      ["Significant/Chronic", "Occasional/Mild", "Rarely/None"],
+      { message: "Please select a pain level" },
+    ),
+    consultationFormat: z.enum(["in-person", "online"]),
+    name: z
+      .string()
+      .trim()
+      .min(2, "Name is required")
+      .max(100, "Name must be 100 characters or fewer"),
+    email: z
+      .string()
+      .trim()
+      .email("Valid email is required")
+      .max(254, "Email must be 254 characters or fewer"),
+    phone: z
+      .string()
+      .trim()
+      .min(10, "Phone number is required for consultations")
+      .max(30, "Phone number must be 30 characters or fewer")
+      .regex(/^[0-9()+\-.\s]+$/, "Phone number contains invalid characters"),
+  })
+  .strict();
 
 type FormValues = z.infer<typeof formSchema>;
 
@@ -29,15 +74,14 @@ export function IntakeForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const { toast } = useToast();
+  // Honeypot field: invisible to humans; bots that fill it are silently dropped.
+  const honeypotRef = useRef<HTMLInputElement>(null);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       healthGoals: "",
       conditions: "",
-      energyLevel: "",
-      sleepQuality: "",
-      painLevel: "",
       consultationFormat: "online",
       name: "",
       email: "",
@@ -53,10 +97,30 @@ export function IntakeForm() {
   const prevStep = () => setStep((s) => Math.max(1, s - 1));
 
   async function onSubmit(data: FormValues) {
+    // Spam bot check: if the hidden honeypot field was filled, pretend
+    // success without sending anything (don't tip the bot off).
+    if (honeypotRef.current?.value) {
+      setIsSuccess(true);
+      return;
+    }
+
+    // Client-side rate limiting: cooldown + hourly cap, graceful messaging.
+    // Attempt-based: the slot is consumed even if the request later fails.
+    const rateCheck = consumeSubmissionSlot("intake");
+    if (!rateCheck.allowed) {
+      toast({
+        title: "Please slow down",
+        description: rateCheck.reason,
+      });
+      return;
+    }
+
     setIsSubmitting(true);
-    
+
+    // Access key is a Web3Forms *publishable* key (designed to be public,
+    // like a form ID) supplied via environment variable — never hard-coded.
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
-    
+
     if (!accessKey) {
       toast({
         title: "Setup in progress",
@@ -67,18 +131,20 @@ export function IntakeForm() {
     }
 
     try {
+      // All values below have passed strict schema validation; free-text
+      // fields are additionally sanitized before being relayed via email.
       const formattedAnswers = `
-Name: ${data.name}
-Email: ${data.email}
-Phone: ${data.phone}
+Name: ${sanitizeLine(data.name)}
+Email: ${sanitizeLine(data.email)}
+Phone: ${sanitizeLine(data.phone)}
 
 Format Preference: ${data.consultationFormat}
 
 Health Goals:
-${data.healthGoals}
+${sanitizeText(data.healthGoals)}
 
 Conditions/Concerns:
-${data.conditions || "None provided"}
+${data.conditions ? sanitizeText(data.conditions) : "None provided"}
 
 Daily Status:
 Energy Level: ${data.energyLevel}
@@ -86,6 +152,7 @@ Sleep Quality: ${data.sleepQuality}
 Pain Level: ${data.painLevel}
       `.trim();
 
+      // Explicit payload — only validated, sanitized fields are forwarded.
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
@@ -96,8 +163,20 @@ Pain Level: ${data.painLevel}
           access_key: accessKey,
           subject: "New Perfect Day intake submission",
           message: formattedAnswers,
+          // Web3Forms honeypot semantics: empty value = human submission.
+          botcheck: "",
         }),
       });
+
+      // Graceful handling of upstream rate limiting (HTTP 429).
+      if (response.status === 429) {
+        toast({
+          title: "Too many requests",
+          description: "Please wait a moment and try again.",
+          variant: "destructive",
+        });
+        return;
+      }
 
       const result = await response.json();
       
@@ -153,6 +232,16 @@ Pain Level: ${data.painLevel}
 
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
+          {/* Honeypot: hidden from real users (and screen readers); bots auto-fill it */}
+          <input
+            ref={honeypotRef}
+            type="text"
+            name="botcheck"
+            tabIndex={-1}
+            autoComplete="off"
+            aria-hidden="true"
+            className="hidden"
+          />
           
           {/* STEP 1 */}
           <div className={step === 1 ? "block" : "hidden space-y-6"}>
