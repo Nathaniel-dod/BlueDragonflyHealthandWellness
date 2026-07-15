@@ -3,6 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { ServiceFAQ } from "@/components/ServiceFAQ";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import cardioMedbedImg from "@assets/cardio-medbed-unit_1784132031512.png";
 
 export default function CardioMedBed() {
   return (
@@ -111,7 +112,16 @@ export default function CardioMedBed() {
               </div>
             </div>
 
-            <div className="bg-white/60 backdrop-blur-md p-10 rounded-3xl border border-white/40 shadow-2xl shadow-brand-royal/5">
+            <div>
+              <div className="relative mb-10 px-4">
+                <div className="absolute inset-x-8 bottom-4 h-16 bg-brand-royal/10 blur-2xl rounded-full"></div>
+                <img
+                  src={cardioMedbedImg}
+                  alt="The Cardio MedBed EECP unit with sequential compression cuffs and digital control screen"
+                  className="w-full h-auto relative z-10 drop-shadow-2xl"
+                />
+              </div>
+              <div className="bg-white/60 backdrop-blur-md p-10 rounded-3xl border border-white/40 shadow-2xl shadow-brand-royal/5">
               <h3 className="text-2xl font-serif text-brand-royal mb-6">Why Our MedBed is Superior</h3>
               
               <ul className="space-y-6">
@@ -138,6 +148,7 @@ export default function CardioMedBed() {
                   <span className="font-semibold text-brand-royal">After Session</span>
                   <span className="text-brand-dragonfly font-bold">Gradual energy gains</span>
                 </div>
+              </div>
               </div>
             </div>
 
