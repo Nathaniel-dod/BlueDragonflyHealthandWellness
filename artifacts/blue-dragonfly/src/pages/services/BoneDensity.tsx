@@ -26,7 +26,7 @@ export default function BoneDensity() {
       <section className="relative pt-24 pb-32 overflow-hidden bg-brand-royal text-white">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/assets/bone-density.jpg" 
+            src="/assets/bone-density-hero.png" 
             alt="Advanced Bone Density Scanning" 
             className="w-full h-full object-cover object-center opacity-30 mix-blend-multiply"
           />

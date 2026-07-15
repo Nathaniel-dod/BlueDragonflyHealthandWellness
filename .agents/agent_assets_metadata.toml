@@ -1,5 +1,34 @@
 uploads = []
-generated = []
+
+[[generated]]
+id = "NU7X_QfcQyhotfS2vRepB"
+uri = "file://artifacts/blue-dragonfly/public/assets/wolfe-hero.png"
+type = "image"
+title = "wolfe muscles joints 3d"
+
+[[generated]]
+id = "tEHJmy65wF_thY9gInzyo"
+uri = "file://artifacts/blue-dragonfly/public/assets/cellsonic-hero.png"
+type = "image"
+title = "cellsonic healthy cells 3d"
+
+[[generated]]
+id = "DG4F6Q06i82vIu5TH1u-I"
+uri = "file://artifacts/blue-dragonfly/public/assets/cardio-medbed-hero.png"
+type = "image"
+title = "blood circulation 3d veins"
+
+[[generated]]
+id = "vgr-rDJVDGVFK4ts_Ya9y"
+uri = "file://artifacts/blue-dragonfly/public/assets/bone-density-hero.png"
+type = "image"
+title = "bone density scan 3d"
+
+[[generated]]
+id = "VQwX-smR98sBir5vtJlNN"
+uri = "file://artifacts/blue-dragonfly/public/assets/perfect-day-hero.png"
+type = "image"
+title = "happy family nature consults"
 
 [[outputs]]
 id = "ONPndU0Tqc9a1I0M23bhz"

@@ -27,7 +27,7 @@ export default function WolfeNonSurgical() {
       <section className="relative pt-24 pb-32 overflow-hidden bg-brand-royal text-white">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/assets/wolfe.jpg" 
+            src="/assets/wolfe-hero.png" 
             alt="Wolfe Non-Surgical Bodywork" 
             className="w-full h-full object-cover object-center opacity-30 mix-blend-multiply"
           />

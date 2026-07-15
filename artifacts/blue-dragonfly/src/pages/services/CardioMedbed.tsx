@@ -26,7 +26,7 @@ export default function CardioMedBed() {
       <section className="relative pt-24 pb-32 overflow-hidden bg-brand-royal text-white">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/assets/cardio-medbed.jpg" 
+            src="/assets/cardio-medbed-hero.png" 
             alt="Cardio MedBed EECP" 
             className="w-full h-full object-cover object-center opacity-30 mix-blend-multiply"
           />
