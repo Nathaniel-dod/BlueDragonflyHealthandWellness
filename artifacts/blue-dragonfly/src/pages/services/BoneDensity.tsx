@@ -3,6 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { ServiceFAQ } from "@/components/ServiceFAQ";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import boneScannerImg from "@assets/bone-scanner_1784132042233.png";
 
 export default function BoneDensity() {
   return (
@@ -88,6 +89,15 @@ export default function BoneDensity() {
             <p className="text-lg text-gray-700 max-w-2xl mx-auto font-light">
               Quantitative ultrasound passes sound waves through bone and measures how fast they travel. Denser, healthier bone speeds up the signal in predictable ways — producing an objective bone density reading with zero ionizing radiation.
             </p>
+
+            <div className="relative max-w-xl mx-auto mt-14">
+              <div className="absolute inset-x-12 bottom-4 h-14 bg-brand-royal/10 blur-2xl rounded-full"></div>
+              <img
+                src={boneScannerImg}
+                alt="The portable Advanced Bone Density Scanner with handheld ultrasound probe"
+                className="w-full h-auto relative z-10 drop-shadow-2xl"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
