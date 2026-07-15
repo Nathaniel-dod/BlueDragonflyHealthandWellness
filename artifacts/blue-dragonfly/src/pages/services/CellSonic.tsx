@@ -3,6 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { ServiceFAQ } from "@/components/ServiceFAQ";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import cellsonicTreatmentImg from "@assets/cellsonic-neck-home_1784132022274.png";
 
 export default function CellSonic() {
   return (
@@ -81,6 +82,14 @@ export default function CellSonic() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
             <div className="order-2 lg:order-1">
+              <div className="relative mb-10">
+                <div className="absolute -inset-3 border-2 border-brand-gold/30 rounded-2xl rounded-bl-[80px] transform -rotate-2"></div>
+                <img
+                  src={cellsonicTreatmentImg}
+                  alt="CellSonic Regeneration session treating the ankle in a comfortable setting"
+                  className="w-full h-auto rounded-2xl rounded-bl-[80px] shadow-2xl relative z-10"
+                />
+              </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-gradient-to-br from-brand-royal to-brand-dragonfly text-white p-6 sm:p-8 rounded-3xl shadow-lg">
                   <h4 className="font-bold text-xl mb-2 text-brand-gold">50% Deeper</h4>
