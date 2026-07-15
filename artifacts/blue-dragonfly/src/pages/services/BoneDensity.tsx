@@ -29,8 +29,9 @@ export default function BoneDensity() {
           <img 
             src="/assets/bone-density-hero.png" 
             alt="Advanced Bone Density Scanning" 
-            className="w-full h-full object-cover object-center opacity-30 mix-blend-multiply"
+            className="w-full h-full object-cover object-[70%_center] md:object-center opacity-45 md:opacity-30 mix-blend-multiply"
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-royal/80 via-brand-royal/50 to-brand-royal/70 md:hidden"></div>
         </div>
         <div className="container relative z-10 px-4 md:px-6">
           <div className="max-w-3xl">
