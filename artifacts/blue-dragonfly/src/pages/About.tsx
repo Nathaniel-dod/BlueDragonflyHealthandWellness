@@ -19,9 +19,9 @@ export default function About() {
             
             {/* Header */}
             <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-              <h1 className="text-5xl md:text-6xl font-serif text-brand-royal mb-6">About Us</h1>
+              <h1 className="text-5xl md:text-6xl font-serif text-brand-royal mb-6">About Me</h1>
               <p className="text-xl text-gray-700 max-w-2xl mx-auto font-light">
-                Dedicated to helping you reverse the signs of aging and eliminate pain through advanced, non-surgical regeneration.
+                I'm dedicated to helping you reverse the signs of aging and eliminate pain through advanced, non-surgical regeneration.
               </p>
             </div>
 
@@ -49,25 +49,25 @@ export default function About() {
                   </p>
                   
                   <p>
-                    As a New World Practitioner (NWP), Cheryl Hathaway operates on a simple but profound principle: your body is designed to heal itself. Often, what stands in the way of that healing is deep tissue blockages, cellular starvation, or simply not having the right protocol in place.
+                    I'm Cheryl Hathaway, a New World Practitioner (NWP), and I operate on a simple but profound principle: your body is designed to heal itself. Often, what stands in the way of that healing is deep tissue blockages, cellular starvation, or simply not having the right protocol in place.
                   </p>
                   
                   <p>
-                    At Blue Dragonfly Health & Wellness, Cheryl utilizes state-of-the-art technologies and techniques that are clinically studied but operate outside the paradigm of invasive surgery or pharmaceuticals. From unlocking cellular energy with CellSonic Regeneration to revitalizing the circulatory system with Cardio MedBed EECP, her approach is comprehensive and data-driven.
+                    At Blue Dragonfly Health & Wellness, I use state-of-the-art technologies and techniques that are clinically studied but operate outside the paradigm of invasive surgery or pharmaceuticals. From unlocking cellular energy with CellSonic Regeneration to revitalizing the circulatory system with Cardio MedBed EECP, my approach is comprehensive and data-driven.
                   </p>
                   
-                  <h3 className="text-2xl font-serif text-brand-royal mt-10 mb-4">A Personalized Approach</h3>
+                  <h3 className="text-2xl font-serif text-brand-royal mt-10 mb-4">My Personalized Approach</h3>
                   <p>
-                    No two bodies are exactly alike, which is why Cheryl champions the <strong>Perfect Day Consultation</strong>. This isn't a quick 15-minute visit. It's a deep dive into your daily routine, your health history, and your goals. Whether you are dealing with a degenerating condition or want to stay vibrantly healthy to prevent conditions from developing, Cheryl builds a customized, actionable protocol that fits your life.
+                    No two bodies are exactly alike, which is why I champion the <strong>Perfect Day Consultation</strong>. This isn't a quick 15-minute visit. It's a deep dive into your daily routine, your health history, and your goals. Whether you are dealing with a degenerating condition or want to stay vibrantly healthy to prevent conditions from developing, I build a customized, actionable protocol that fits your life.
                   </p>
 
                   <p>
-                    Her clients often report feeling heard, understood, and—most importantly—empowered. She offers lifetime support and guidance to ensure her clients have the tools they need to achieve extraordinary results.
+                    My clients often tell me they feel heard, understood, and—most importantly—empowered. I offer lifetime support and guidance, because I want you to have every tool you need to achieve extraordinary results.
                   </p>
 
                   <div className="mt-12 p-8 bg-brand-warm rounded-2xl border border-brand-gold/30">
                     <h4 className="text-xl font-serif text-brand-royal mb-4">Ready to start your journey?</h4>
-                    <p className="mb-6">Connect with Cheryl in person at our Calgary clinic, or online from the comfort of your home.</p>
+                    <p className="mb-6">Connect with me in person at my Calgary clinic, or online from the comfort of your home.</p>
                     <Button asChild className="bg-brand-royal hover:bg-brand-dragonfly text-white rounded-full">
                       <Link href="/services/perfect-day-consultations">Book a Perfect Day Consultation</Link>
                     </Button>

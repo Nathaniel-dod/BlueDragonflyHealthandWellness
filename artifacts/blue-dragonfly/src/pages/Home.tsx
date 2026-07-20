@@ -143,10 +143,10 @@ export default function Home() {
             <div className="order-2 lg:order-1 space-y-6">
               <h2 className="text-4xl md:text-5xl font-serif text-brand-gold mb-6">Meet Cheryl Hathaway, NWP</h2>
               <p className="text-lg text-white/90 leading-relaxed">
-                As a New World Practitioner, Cheryl believes that the body holds immense potential to heal itself when given the right support. She brings decades of understanding to the practice of non-surgical restoration.
+                "As a New World Practitioner, I believe your body holds immense potential to heal itself when given the right support. I bring decades of understanding to the practice of non-surgical restoration.
               </p>
               <p className="text-lg text-white/90 leading-relaxed">
-                Whether you're looking to eliminate pain, improve heart health, or simply craft the perfect daily routine for longevity, Cheryl provides the personalized, lifetime support necessary to achieve extraordinary results.
+                Whether you want to eliminate pain, improve your heart health, or simply craft the perfect daily routine for longevity, I'll walk alongside you with personalized, lifetime support — so you can achieve extraordinary results."
               </p>
               <div className="pt-8">
                 <Button asChild className="bg-brand-gold hover:bg-brand-gold/90 text-brand-royal h-14 px-8 rounded-full text-lg font-medium">
