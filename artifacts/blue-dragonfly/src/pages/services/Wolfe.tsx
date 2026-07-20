@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { ServiceFAQ } from "@/components/ServiceFAQ";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import wolfeTreatmentImg from "@assets/wolfe_treatment.png";
+import wolfeTreatmentImg from "@assets/ChatGPT_Image_Jul_20,_2026,_04_25_47_PM_1784575565342.png";
 
 export default function WolfeNonSurgical() {
   return (
