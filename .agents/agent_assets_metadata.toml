@@ -30,6 +30,12 @@ uri = "file://artifacts/blue-dragonfly/public/assets/perfect-day-hero.png"
 type = "image"
 title = "happy family nature consults"
 
+[[generated]]
+id = "jIPsFGsNAhxBTcsW5J0bX"
+uri = "file://artifacts/blue-dragonfly/src/assets/dragonfly-journey.png"
+type = "image"
+title = "dragonfly journey brand art"
+
 [[outputs]]
 id = "ONPndU0Tqc9a1I0M23bhz"
 uri = "file://artifacts/blue-dragonfly/public/assets/hero-clinic.jpg"

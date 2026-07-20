@@ -3,6 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import cherylImg from "@assets/cheryl_image-w_logo_1783984989766.png";
+import dragonflyJourneyImg from "@/assets/dragonfly-journey.png";
 
 export default function About() {
   return (
@@ -56,7 +57,14 @@ export default function About() {
                     At Blue Dragonfly Health & Wellness, I use state-of-the-art technologies and techniques that are clinically studied but operate outside the paradigm of invasive surgery or pharmaceuticals. From unlocking cellular energy with CellSonic Regeneration to revitalizing the circulatory system with Cardio MedBed EECP, my approach is comprehensive and data-driven.
                   </p>
                   
-                  <h3 className="text-2xl font-serif text-brand-royal mt-10 mb-4">My Personalized Approach</h3>
+                </div>
+
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mt-16 pt-16 border-t border-brand-sky/20">
+
+                <div className="lg:col-span-7 prose prose-lg prose-blue max-w-none text-gray-700">
+                  <h3 className="text-2xl font-serif text-brand-royal mb-4">My Personalized Approach</h3>
                   <p>
                     No two bodies are exactly alike, which is why I champion the <strong>Perfect Day Consultation</strong>. This isn't a quick 15-minute visit. It's a deep dive into your daily routine, your health history, and your goals. Whether you are dealing with a degenerating condition or want to stay vibrantly healthy to prevent conditions from developing, I build a customized, actionable protocol that fits your life.
                   </p>
@@ -71,6 +79,17 @@ export default function About() {
                     <Button asChild className="bg-brand-royal hover:bg-brand-dragonfly text-white rounded-full">
                       <Link href="/services/perfect-day-consultations">Book a Perfect Day Consultation</Link>
                     </Button>
+                  </div>
+                </div>
+
+                <div className="lg:col-span-5">
+                  <div className="relative">
+                    <div className="absolute -inset-3 border-2 border-brand-gold/30 rounded-2xl rounded-br-[80px] transform rotate-2"></div>
+                    <img
+                      src={dragonflyJourneyImg}
+                      alt="A blue dragonfly rising along a golden path of light — the journey to renewed wellness"
+                      className="w-full h-auto rounded-2xl rounded-br-[80px] shadow-2xl relative z-10"
+                    />
                   </div>
                 </div>
 
