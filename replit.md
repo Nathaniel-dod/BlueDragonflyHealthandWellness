@@ -53,7 +53,7 @@ Multi-page practitioner website for a Calgary, Alberta health & wellness clinic 
 
 ## Gotchas
 
-- Confirmed custom domain: `bluedragonflyhealthandwellness.com` (with the "e" in blue) — used in SEO canonical URLs, `public/sitemap.xml`, and `public/robots.txt`
+- Confirmed custom domain: `bluedragonflyhw.com` (updated July 2026 from the longer bluedragonflyhealthandwellness.com) — used in SEO canonical URLs, `public/sitemap.xml`, and `public/robots.txt`
 
 - `VITE_WEB3FORMS_ACCESS_KEY` is set (shared env) and confirmed working on the live Cloudflare site. Web3Forms blocks submissions from dev/preview domains (localhost, Replit preview), so forms show "Submission failed" in the workspace preview — this is expected; production and `pages.dev` domains work.
 - Home page reserves a blank practitioner section (image + bio) for content coming soon
