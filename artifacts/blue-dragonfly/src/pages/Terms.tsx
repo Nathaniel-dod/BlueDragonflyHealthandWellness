@@ -10,7 +10,7 @@ export default function Terms() {
       <SEO
         title="Terms of Use & Disclaimer"
         description="Terms of use, medical disclaimer, and conditions for the Blue Dragonfly Health & Wellness website and services."
-        canonicalUrl="https://bluedragonflyhw.com/terms"
+        canonicalUrl="https://bluedragonflyhealthandwellness.com/terms"
       />
 
       <div className="bg-brand-sky/10 relative py-16 md:py-24 overflow-hidden">

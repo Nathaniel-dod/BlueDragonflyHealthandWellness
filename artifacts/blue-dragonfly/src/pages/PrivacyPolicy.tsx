@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
       <SEO
         title="Privacy Policy"
         description="How Blue Dragonfly Health & Wellness collects, uses, and protects your personal information."
-        canonicalUrl="https://bluedragonflyhw.com/privacy-policy"
+        canonicalUrl="https://bluedragonflyhealthandwellness.com/privacy-policy"
       />
 
       <div className="bg-brand-sky/10 relative py-16 md:py-24 overflow-hidden">

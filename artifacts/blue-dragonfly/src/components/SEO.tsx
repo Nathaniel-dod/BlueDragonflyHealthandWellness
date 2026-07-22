@@ -14,7 +14,7 @@ interface SEOProps {
 
 export function SEO({ title, description, canonicalUrl, schema, ogImage = "/assets/hero-clinic.jpg", ogType = "website", noindex = false }: SEOProps) {
   const fullTitle = `${title} | Blue Dragonfly Health & Wellness Calgary`;
-  const url = canonicalUrl || "https://bluedragonflyhw.com"; // placeholder domain
+  const url = canonicalUrl || "https://bluedragonflyhealthandwellness.com"; // placeholder domain
 
   return (
     <Helmet>

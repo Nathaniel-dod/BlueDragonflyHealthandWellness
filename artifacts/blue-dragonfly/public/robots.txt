@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bluedragonflyhw.com/sitemap.xml
+Sitemap: https://bluedragonflyhealthandwellness.com/sitemap.xml

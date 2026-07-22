@@ -69,7 +69,7 @@ export default function BlogPost() {
       <SEO
         title={post.title.split("?")[0] + "?"}
         description={post.excerpt}
-        canonicalUrl={`https://bluedragonflyhw.com/blog/${post.slug}`}
+        canonicalUrl={`https://bluedragonflyhealthandwellness.com/blog/${post.slug}`}
         ogType="article"
         schema={articleSchema}
       />

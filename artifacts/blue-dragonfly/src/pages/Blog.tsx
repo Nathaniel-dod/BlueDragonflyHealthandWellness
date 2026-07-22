@@ -50,7 +50,7 @@ export default function Blog() {
       <SEO
         title="Wellness Blog"
         description="Insights on Wolfe Non Surgical Therapy, CellSonic Regeneration ESWT, and Cardio MedBed EECP from Blue Dragonfly Health & Wellness in Calgary — results, recovery, and what to expect."
-        canonicalUrl="https://bluedragonflyhw.com/blog"
+        canonicalUrl="https://bluedragonflyhealthandwellness.com/blog"
       />
 
       <div className="bg-brand-sky/10 relative py-16 md:py-24 overflow-hidden">
