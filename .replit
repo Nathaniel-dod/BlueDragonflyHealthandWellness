@@ -22,4 +22,4 @@ timeoutMs = 20000
 [userenv]
 
 [userenv.shared]
-VITE_WEB3FORMS_ACCESS_KEY = "2a4c5610-7363-451c-b062-27314eeabfc6"
+VITE_WEB3FORMS_ACCESS_KEY = "caf97842-fc8c-4476-8de9-7a50e815567c"
